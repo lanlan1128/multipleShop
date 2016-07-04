@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>百城万店倾销网</title>
+
+    <link rel="stylesheet" type="text/css" href="./../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/index.css">
+    <link rel="stylesheet" type="text/css" href="./../css/product.css">
+
+</head>
+<body>
+
+<!--
+
+注意要把单价传到productBox data-unitPrice属性
+
+-->
+
+<header class="ui-header ui-header-stable ui-border-b">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1>购物车</h1>
+</header>
+
+<footer class="ui-footer ui-footer-stable ui-border-t">
+    <ul class="ui-tiled">
+        <li class="footerItem" onclick="window.location.href='./index.html'"><i class="ui-icon-home"></i><div>首页</div></li>
+        <li class="footerItem active"><i class="ui-icon-cart" onclick="window.location.href='./shopCart.html'"></i><div>购物车</div></li>
+        <li class="footerItem"><i class="ui-icon-personal" onclick="window.location.href='./storecenter.html'"></i><div>个人中心</div></li>
+    </ul>
+</footer>
+
+<section class="ui-container">
+
+    <!-- [[没有商品 -->
+    <section class="ui-notice hide" id="noProductWrapper">
+        <i></i>
+        <p>购物车还是空的</p>
+        <div class="ui-notice-btn">
+            <button class="ui-btn-lg productBtn" onclick="window.location.href='./index.html'">去购买</button>
+        </div>
+    </section><!-- 没有商品]] -->
+
+    <!-- [[有商品 -->
+    <div id="hasProductWrapper">
+
+        <div class="productsBox ui-border-t ">
+            <!-- [[单个商品 -->
+            <div class="productBox ui-border-b" id="22">
+
+               <div class="col imgCol">
+                   <a href="./productDetail.html"><img src="./../image/1.jpg" alt=""></a>
+               </div>
+
+                <div class="col describeCol">
+                    <h4 class="intwoline productName">自然堂雪域精粹纯粹滋润冰肌水自然堂雪域精粹纯粹滋润冰肌水</h4>
+                    <div>
+                        <div class="selectNum">
+                            <button class="reduce mins">&#45;</button>
+                            <input type="text" value="3" title="number" data-max="100" data-min="3" readonly="readonly" class="productNum"/>
+                            <button class="add plus">&#43;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col rightCol">
+                    <button><i class="ui-icon-delete productDel"></i></button>
+                    <p class="price">&#165; 196.09</p>
+                </div>
+
+            </div><!-- 单个商品]] -->
+            <!-- [[单个商品 -->
+            <div class="productBox ui-border-b" id="22">
+
+                <div class="col imgCol">
+                    <a href="./productDetail.html"><img src="./../image/1.jpg" alt=""></a>
+                </div>
+
+                <div class="col describeCol">
+                    <h4 class="intwoline productName">自然堂雪域精粹纯粹滋润冰肌水自然堂雪域精粹纯粹滋润冰肌水</h4>
+                    <div>
+                        <div class="selectNum">
+                            <button class="reduce mins">&#45;</button>
+                            <input type="text" value="5" title="number" data-max="10" data-min="5" readonly="readonly" class="productNum"/>
+                            <button class="add plus">&#43;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col rightCol">
+                    <button><i class="ui-icon-delete productDel"></i></button>
+                    <p class="price">&#165; 196.09</p>
+                </div>
+
+            </div><!-- 单个商品]] -->
+
+
+            <!-- [[价格合计 -->
+            <ul class="countBlock ui-border-b">
+                <li>商品合计： <span class="themeColor" id="amount">&#165; 1568.72</span>（共<span id="num">8</span>件）</li>
+                <li>运费合计： <span class="themeColor" id="freight">&#165; 10.00</span></li>
+            </ul><!-- 价格合计]] -->
+
+            <div class="ui-btn-wrap">
+                <button class="ui-btn-lg productBtn">
+                    去结算
+                </button>
+            </div>
+
+        </div>
+
+    </div><!-- 有商品]] -->
+
+</section>
+
+
+<script src="./../lib/js/zepto.min.js"></script>
+<script src="./../lib/js/frozen.js"></script>
+<script src="./../js/shopCart.js"></script>
+
+</body>
+</html>

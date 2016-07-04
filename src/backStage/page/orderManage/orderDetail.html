@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一内购-订单详情</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./../../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/order.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <!-- [[头部 -->
+    <header class="header container-fluid">
+        <div class="row">
+            <div class="col-xs-3">
+                <img src="../image/logo.jpg" alt="一内购" class="logo img-responsive">
+                <button class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="col-xs-6 header_center">
+                <h1 class="websiteName">百城万店倾销网平台</h1>
+            </div>
+            <div class="col-xs-3">
+                <button class="btnExit fr" type="button"><span class="glyphicon glyphicon-off"></span>退出</button>
+            </div>
+        </div>
+    </header><!-- 头部]] -->
+
+    <!-- [[页面主体 -->
+    <div class="mainBody container-fluid">
+
+        <div class="row">
+
+            <!-- [[ 左边导航 -->
+            <ul class="col-md-3 col-lg-2 navigation" aria-expanded="true">
+                <li>
+                    <div class="navItem"><a href="./../index.html"><span class="glyphicon glyphicon-home"></span>首页</a></div>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-user"></span>用户管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../userManage/largeArea.html">大区列表</a></li>
+                        <li><a href="./../userManage/role.html">角色列表</a></li>
+                        <li><a href="./../userManage/shop.html">店家列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-tag"></span>商品管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../productManage/productList.html">商品列表</a></li>
+                        <li><a href="./../productManage/productPublish.html">发布商品</a></li>
+                        <li><a href="./../productManage/productQuery.html">商品查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-file"></span>订单管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../orderManage/orderList.html">订单列表</a></li>
+                        <li><a href="./../orderManage/orderCheck.html">订单查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-credit-card"></span>财务管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../financingManage/loadList.html">贷款列表</a></li>
+                        <li><a href="./../financingManage/recharge.html">充值列表</a></li>
+                        <li><a href="./../financingManage/taxList.html">会费列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-open"></span>提现管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../withdrawManage/largeCommission.html">大区佣金提现</a></li>
+                        <li><a href="./../withdrawManage/roleCommission.html">角色佣金提现</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-wrench"></span>系统设置</div>
+                    <ul class="subNav">
+                        <li><a href="./../systemManage/indexCarousel.html">首页轮播</a></li>
+                        <li><a href="./../systemManage/parameter.html">参数设置</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- 左边导航]] -->
+
+            <!-- [[右边操作页面 -->
+            <div class="content col-md-10 orderDetail">
+                <div class="order">
+                    <div class="order-statue clearfix">
+                    <div class="order-statue clearfix">
+                        <div class="order-number pull-left">订单号：1f56aw4f56er44f64afe6f4er6</div>
+                        <div class="pull-right statue">已完成</div>
+                    </div>
+                    <div class="receive-message text-left">
+                        <div class="receive-title">收货人信息</div>
+                        <div class="name">孙悟空</div>
+                        <div class="phone">13501514078</div>
+                        <div class="address">广东省 广州市 白云区 黄边村祥盛街水帘洞10卡位</div>
+                    </div>
+                    <div class="product clearfix">
+                        <div class="pull-left col-md-8">
+                            <div class="col-md-4">
+                                <img src="../../image/user.jpg" alt=""/>
+                            </div>
+                            <div class="col-md-8 text-left">
+                                <span class="name">萝莉就是萝莉七件套装</span><br /><br />
+                                <span class="specific">规格：规格1</span><br />
+                            </div>
+                        </div>
+                        <div class="pull-right width-2 text-right">
+                            <span class="price">￥99.99</span><br /><br />
+                            <span class="number">X 99</span>
+                        </div>
+                    </div>
+                    <div class="product clearfix">
+                        <div class="pull-left col-md-8">
+                            <div class="col-md-4">
+                                <img src="../../image/user.jpg" alt=""/>
+                            </div>
+                            <div class="col-md-8 text-left">
+                                <span class="name">萝莉就是萝莉七件套装</span><br /><br />
+                                <span class="specific">规格：规格1</span><br />
+                            </div>
+                        </div>
+                        <div class="pull-right width-2 text-right">
+                            <span class="price">￥99.99</span><br /><br />
+                            <span class="number">X 99</span>
+                        </div>
+                    </div>
+                    <div class="order-total clearfix text-left">
+                        <div class="pull-left">
+                            <div class="product-total">商品合计：￥99.99（共99件）</div>
+                            <div class="freight">运费合计：￥9.99</div>
+                        </div>
+                        <div class="pull-right">
+                            <button class="btn btn-warning" >同意退款</button>
+                        </div>
+                    </div>
+                    <div class="order-time text-left">
+                        <div class="placeOrder">下单时间：2016-03-09 15:11:50</div>
+                        <div class="payOrder">付款时间：2016-03-09 15:12:06</div>
+                        <div class="sendOrder">发货时间：暂未发货</div>
+                    </div>
+                    <div class="logisticsTrace clearfix">
+                        <a href="./logisticsTrace.html">
+                            <button class="btn btn-primary">物流追踪</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 右边操作页面]] -->
+        </div>
+
+    </div>
+    <!-- 页面主体]] -->
+</div>
+<!-- wrapper]] -->
+
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./../../script/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>百城万店倾销网</title>
+    
+    <!-- 字体 -->
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="./../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/index.css?12">
+    <link rel="stylesheet" type="text/css" href="./../css/product.css?12">
+
+</head>
+<body>
+
+<header class="ui-header ui-header-stable ui-border-b">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1>商品详情</h1>
+</header>
+
+<footer class="ui-footer ui-footer-stable ui-border-t">
+    <ul class="ui-tiled">
+        <li class="footerItem active" onclick="window.location.href='./index.html'"><i class="ui-icon-home"></i><div>首页</div></li>
+        <li class="footerItem"><i class="ui-icon-cart" onclick="window.location.href='./shopCart.html'"></i><div>购物车</div></li>
+        <li class="footerItem"><i class="ui-icon-personal" onclick="window.location.href='./storecenter.html'"></i><div>个人中心</div></li>
+    </ul>
+</footer>
+
+<section class="ui-container">
+
+    <!-- [[轮播图 -->
+    <div class="ui-slider" id="productDetailSlider">
+        <ul class="ui-slider-content" style="width: 300%">
+            <li><img src="./../image/1.jpg" alt=""></li>
+            <li><img src="./../image/2.jpg" alt=""></li>
+            <li><img src="./../image/3.jpg" alt=""></li>
+        </ul>
+    </div><!-- 轮播图]] -->
+
+    <!-- [[商品参数 -->
+    <div class="ui-row productSpecBlock">
+
+        <!-- 商品名 -->
+        <p class="productName">自然堂雪域精粹纯粹滋润冰肌水(清润型)汇聚喜马拉雅5000米，滋润力量,提升肌肤角质屏障功能,优化肌肤保水力,令肌肤水润鲜活.欢迎访问自然堂(Chando)官网,发掘你与生俱来的美.</p>
+        <!-- 收藏 -->
+        <div class="collect" data-collect="false">
+            <i class="iconfont icon-collect"></i>  
+            <p>收藏</p>
+        </div>
+
+
+        <ul class="ui-row">
+            <!-- 左边 -->
+            <li class="ui-col ui-col-50">
+                <p class="specText">
+                    <span>零售价：</span>
+                    <span class="themeColor">&#165;123.09</span></p>
+                <p class="specText">
+                    <span>市场价：</span>
+                    <span class="themeColor">&#165;123.09</span></p>
+                <p class="specText">
+                    <span>运&nbsp;&nbsp;&nbsp;&nbsp;费：</span>
+                    <span>123</span></p>
+                <p class="specText">
+                   <span>备&nbsp;&nbsp;&nbsp;&nbsp;注：</span>
+                   <span id="remark" class="oneLine">份上市桑德菲杰这是备注份上市桑德菲杰这是备注份上市桑德菲杰这是备注份上市桑德菲杰这是备注</span></p>
+            </li>
+            <!-- 右边 -->
+            <li class="ui-col ui-col-50 text-right specRight">
+
+                <!-- 查看倾销价 -->
+                <div>
+                    <button class="ui-btn productBtn watchPrice">查看倾销价</button>
+                </div>
+                
+                <!-- 购物车 -->
+                <div>
+                    <button class="ui-btn addCartBtn" id="addCartBtn"><i class="ui-icon-cart"></i></button>
+                </div>
+
+               <!-- 选择数量 -->
+               <div class="selectNum">
+                   <button class="reduce minus">&#45;</button>
+                   <input type="number" value="1" />
+                   <button class="add plus">&#43;</button>
+               </div>
+            </li>
+        </ul>
+        
+        <!-- 底部 -->
+        <ul class="specBottom">
+            <li class="ui-col ui-col-33" id="stock">
+                库存：123
+            </li>
+            <li class="ui-col ui-col-33 text-center">
+                销量： 123
+            </li>
+            <li class="ui-col ui-col-33 text-right">
+                起批量：12
+            </li>
+        </ul>
+
+        <div class="ui-poptips ui-poptips-success addTip">
+            <div class="ui-poptips-cnt"><i></i>1件商品成功加入购物车</div>
+        </div>
+
+    </div>
+    <!-- 商品参数]] -->
+
+    <!-- [[商品介绍和评价-->
+    <div class="ui-tab bottomBlock">
+        <ul class="ui-tab-nav ui-border-b">
+            <li class="current">商品介绍</li>
+            <li>商品评价</li>
+        </ul>
+        <ul class="ui-tab-content">
+            <!-- [[商品介绍内容 -->
+            <li class="productIntro">
+                <p class="content">这是一些描述字段，测试一下描述字段的line-height测试测试</p>
+                <img src="../image/1.jpg" alt="">
+                <img src="../image/1.jpg" alt="">
+            </li><!-- 商品介绍内容]] -->
+            <!-- [[商品评价内容 -->
+            <li class="productComment">
+                <ul class="ui-list ui-list-pure ui-border-tb">
+                    <li class="ui-border-t">
+                        <p><span>1.faycheng </span><span class="date"> 2月12日</span></p>
+                        <h4>这本书太赞了，每次看都有不一样的体会和感悟，超级喜欢！期待大结局。</h4>
+                    </li>
+                    <li class="ui-border-t">
+                        <p><span>2.faycheng </span><span class="date"> 2月12日</span></p>
+                        <h4>这本书太赞了，每次看都有不一样的体会和感悟，超级喜欢！期待大结局。</h4>
+                    </li>
+                    <li class="ui-border-t">
+                        <p><span>3.faycheng </span><span class="date"> 2月12日</span></p>
+                        <h4>这本书太赞了，每次看都有不一样的体会和感悟，超级喜欢！期待大结局。</h4>
+                    </li>
+                </ul>
+            </li><!-- 商品评价内容]] -->
+        </ul>
+    </div>
+    <!-- 商品介绍和评价]]-->
+<!--
+    <button class="ui-btn" onclick="location.reload()">刷新</button>-->
+
+</section>
+
+<!-- [[点击查看需要倾销 -->
+<div class="ui-dialog" id="goPayDialog">
+    <div class="ui-dialog-cnt">
+        <div class="ui-dialog-bd">
+            <div>查看需要支付XX倾销币</div>
+        </div>
+        <div class="ui-dialog-ft">
+            <button type="button" data-role="button">取消</button>
+            <button type="button" data-role="button">支付查看</button>
+        </div>
+    </div>
+</div><!-- 点击查看需要倾销]] -->
+
+<!-- 加入购物车悬浮按钮 -->
+<input type="hidden" name="flag" value="0" id="flag" />
+<a class="addCartBtnFix"><i class="ui-icon-cart"></i></a>
+<!-- /加入购物车悬浮按钮 -->
+
+<script src="./../lib/js/zepto.min.js"></script>
+<script src="./../lib/js/frozen.js"></script>
+<script src="./../js/index.js?12"></script>
+<script>
+    // 显示购物车悬浮按钮
+    var $addCartBtnFix = $('.addCartBtnFix');
+    var flag = $('#flag').val(); 
+    $(window).on('scroll',function(){
+        if( $(this).scrollTop() > 514 && flag === "1"  ) {
+            $addCartBtnFix.show();
+        }else {
+            $addCartBtnFix.hide();
+        }
+    });
+
+    /* 加入购物车 */
+    $('#addCartBtn').tap(function(){
+        $('.ui-actionsheet').addClass('show');
+    });
+    $('#rise_div_close, #addCartSure').tap(function(){
+        $('.ui-actionsheet').removeClass('show');
+    });
+    $('#addCartSure').tap(function(){
+        $('.addTip').show();
+        setTimeout(function(){
+            $('.addTip').hide()
+        },2000);
+    });
+
+    /* 商品数量选择组件 */
+    var max = 100/*parseInt( $('#stock').text() )*/;   /*库存量*/
+
+    $('.minus').tap(function(){
+        var $num = $(this).siblings('input');
+        var num =  parseFloat( $num.val() );
+        if ( num >= 2 ) {          // 修改数量显示
+            $num.val( num-1 );
+        }
+
+    });
+
+    $('.plus').tap(function(){
+        var $num = $(this).siblings('input');
+        var num =  parseFloat( $num.val() );
+        if( num < max ) {
+            $num.val( num+1 );
+        }
+    });
+
+    $('.selectNum input').keyup(function(){
+        if( parseInt( $(this).val() ) > max ) {
+            $(this).val(max);
+        }
+        if( parseInt( $(this).val() ) < 1 ) {
+            $(this).val(1);
+        }
+    });
+
+
+    /* tab 《商品介绍和评价》 */
+    window.addEventListener('load', function(){
+
+        var tab = new fz.Scroll('.bottomBlock', {
+            role: 'tab',
+            interval: 3000
+        });
+
+    });
+
+    // 收藏
+    $('.collect').tap(function(){
+        var $self = $(this);
+        var collect =  $self.attr('data-collect');     
+
+        $.ajax({
+            url: '',
+            type: 'GET',
+            success: function(){
+                if( collect == "false" ) {
+                    $self.attr('data-collect',"true");
+                    $self.find('.iconfont').removeClass('icon-collect').addClass('icon-fullCollect');
+                    $self.find('p').text('已收藏');
+                }else {
+                    $self.attr('data-collect',"false");
+                    $self.find('.iconfont').removeClass('icon-fullCollect').addClass('icon-collect');
+                    $self.find('p').text('收藏')
+                }
+            },
+            error: function(){
+
+            }
+        });
+
+    });
+
+    // 备注
+    $('#remark').tap(function(){
+        $(this).toggleClass('oneLine');
+    })
+
+</script>
+
+</body>
+</html>

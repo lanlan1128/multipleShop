@@ -1,0 +1,125 @@
+4.25
+订单的发货按钮点击之后弹出填写物流信息页面
+orderCheck.html  （如果看不清页面 看下面 ↓）  
+1.发货按钮： <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#logisticInfoModal">发货</button>
+2.弹出框：<!-- [[物流填写弹出框-->
+<div class="modal fade" id="logisticInfoModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">填写物流信息</h4>
+            </div>
+            <form action="" class="form-horizontal modal-body">
+                <div class="form-group">
+                    <label for="logisticCompany" class="control-label col-sm-2">物流公司</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="填写物流公司" id="logisticCompany"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="logisticCode" class="control-label col-sm-2">物流编号</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="填写物流编号" id="logisticCode"/>
+                    </div>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="submit" class="btn btn-primary" data-dismiss="modal">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 物流填写弹出框]]-->
+
+
+5月5：添加不同url的按钮的active状态
+<-- html 添加id-->
+<div class="order-type text-left">
+    <button class="btn btn-default" onclick="window.location.href='/listAreaCommission'" id="btn">所有订单</button>
+    <button class="btn btn-default" onclick="window.location.href='/listAreaCommissionStatus?status=0'" id="btn0">待审核</button>
+    <button class="btn btn-default" onclick="window.location.href='/listAreaCommissionStatus?status=1'" id="btn1">通过审核</button>
+    <button class="btn btn-default" onclick="window.location.href='/listAreaCommissionStatus?status=2'" id="btn2">未通过审核</button>
+</div>
+<-- /html -->
+
+
+<-- script -->
+$(document).ready(function(){
+    var judge = window.location.href.split("?")[1];
+    switch(judge){
+        case "status=0" :
+            $('#btn0').addClass("btn-primary");
+        case "status=1" :
+            $('#btn1').addClass("btn-primary");
+        case "status=2" :
+            $('#btn2').addClass("btn-primary");
+        defalult: 
+            $('#btn').addClass("btn-primary");
+    }
+});
+<-- /script -->
+
+
+【【【分页页面url跳转：】】】】】   《《《《tip:首页地址后面要加/0》》》》
+<-- html -->
+<input id="recordNum" hidden="hidden" value="10" />
+
+<button id="prevPage">上一页</button>
+<button id="nextPage">下一页</button>
+
+<-- /html -->
+
+<-- script -->
+var num = parseInt( $('#recordNum').val() );
+$("#prevPage").click(function(){
+    var suffix = -num;
+    // 返回url
+    var url = handleURL(suffix);
+    // 跳转url
+    window.location.href = url;
+});
+
+$("#nextPage").click(function(){
+    var suffix = num;
+    // 返回url
+    var url = handleURL(suffix);
+    // 跳转url
+    window.location.href = url;
+});
+
+// 处理url的函数
+function handleURL(suffix){    // suffix 后缀 为int类型
+    var hostname = window.location.hostname;
+    var pathname = window.location.pathname.split('/');
+    console.log(pathname)
+    suffix = parseInt(pathname.pop()) + suffix;
+    pathname = pathname.concat(suffix)
+    return url = hostname + pathname.join('/');
+}
+<--script -->
+
+
+5月9日：
+ 修改产品上传：（包括封面和附图）
+更新了productPublish.html   component.css   product.js
+
+
+5月12日：
+角色佣金参数设置页面：
+修改地方： parameter.html（包括script部分）和 systemManager.css
+
+
+5月25：
+添加大区列表的操作： 设置佣金参数  
+修改地方：largeArea.html   (1)表格列表想增加操作td   增加了一个hidden的input  （2）增加模态框的代码   （3）增加页面的script部分
+
+
+
+5月31日：
+1.编辑消息页 封面上传用ajax上传
+修改处： common.js添加‘设置图片大小’和‘异步上传图片’的全局函数      
+        页面的封面上传区加上img-content类
+        页面底部的script下面添加file的change事件
+        

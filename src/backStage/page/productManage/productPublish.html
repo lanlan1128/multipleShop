@@ -1,0 +1,242 @@
+<!doc  html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百城万店-发布商品</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet"  type="text/css" href="./../../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"  type="text/css" href="../../css/common.css">
+    <link rel="stylesheet"  type="text/css" href="../../css/components.css">
+    <!-- [[表单中的图片利用formData ajax上传，Chrome 7+、Firefox 4+、IE 10+、Opera 12+、Safari 5+。才支持]] -->
+
+</head>
+<body>
+
+<div class="wrapper">
+    <!-- [[头部 -->
+    <header class="header container-fluid">
+        <div class="row">
+            <div class="col-xs-3">
+                <img src="../image/logo.jpg" alt="一内购" class="logo img-responsive">
+                <button class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="col-xs-6 header_center">
+                <h1 class="websiteName">百城万店倾销网平台</h1>
+            </div>
+            <div class="col-xs-3">
+                <button class="btnExit fr" type="button"><span class="glyphicon glyphicon-off"></span>退出</button>
+            </div>
+        </div>
+    </header><!-- 头部]] -->
+
+    <!-- [[页面主体 -->
+    <div class="mainBody container-fluid">
+
+        <div class="row">
+
+            <!-- [[ 左边导航 -->
+            <ul class="col-md-3 col-lg-2 navigation" aria-expanded="true">
+                <li>
+                    <div class="navItem"><a href="./../index.html"><span class="glyphicon glyphicon-home"></span>首页</a></div>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-user"></span>用户管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../userManage/largeArea.html">大区列表</a></li>
+                        <li><a href="./../userManage/role.html">角色列表</a></li>
+                        <li><a href="./../userManage/shop.html">店家列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-tag"></span>商品管理</div>
+                    <ul class="subNav" style="display: block;">
+                        <li><a href="./../productManage/productList.html">商品列表</a></li>
+                        <li class="active"><a href="./../productManage/productPublish.html">发布商品</a></li>
+                        <li><a href="./../productManage/productQuery.html">商品查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-file"></span>订单管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../orderManage/orderList.html">订单列表</a></li>
+                        <li><a href="./../orderManage/orderCheck.html">订单查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-credit-card"></span>财务管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../financingManage/loadList.html">贷款列表</a></li>
+                        <li><a href="./../financingManage/recharge.html">充值列表</a></li>
+                        <li><a href="./../financingManage/taxList.html">会费列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-open"></span>提现管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../withdrawManage/largeCommission.html">大区佣金提现</a></li>
+                        <li><a href="./../withdrawManage/roleCommission.html">角色佣金提现</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-wrench"></span>系统设置</div>
+                    <ul class="subNav">
+                        <li><a href="./../systemManage/indexCarousel.html">首页轮播</a></li>
+                        <li><a href="./../systemManage/parameter.html">参数设置</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- 左边导航]] -->
+
+            <!-- [[右边操作页面 -->
+            <div class="content col-xs-9 publishProduct">
+                <!-- [[商品信息-->
+                <form class="product-message form-horizontal">
+                    <div class="form-group">
+                        <label for="productName" class="col-xs-2 control-label">商品名：</label>
+                        <div class="col-xs-10 textShow">
+                            <input  type="text" class="form-control" value="商品的名字"  id="productName"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="retailPrice" class="col-xs-2 control-label">零售价：</label>
+                        <div class="col-xs-10 textShow">
+                            <div class="input-group">
+                                <span class="input-group-addon">&#165;</span>
+                                <input  type="number" class="form-control"  id="retailPrice"/>
+                                <span class="input-group-addon">元</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tradePrice" class="col-xs-2 control-label">批发价：</label>
+                        <div class="col-xs-10 textShow">
+                            <div class="input-group">
+                                <span class="input-group-addon">&#165;</span>
+                                <input  type="number" class="form-control" id="tradePrice"/>
+                                <span class="input-group-addon">元</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dumpingPrice" class="col-xs-2 control-label">倾销价：</label>
+                        <div class="col-xs-10 textShow">
+                            <div class="input-group">
+                                <span class="input-group-addon">&#165;</span>
+                                <input  type="number" class="form-control"  id="dumpingPrice"/>
+                                <span class="input-group-addon">元</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dumpingMoney" class="col-xs-2 control-label">倾销币：</label>
+                        <div class="col-xs-10 textShow">
+                            <input  type="number" class="form-control" id="dumpingMoney"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="PV" class="col-xs-2 control-label">PV值：</label>
+                        <div class="col-xs-10 textShow">
+                            <div class="input-group">
+                                <span class="input-group-addon">&#165;</span>
+                                <input  type="number" class="form-control" id="PV"/>
+                                <span class="input-group-addon">元</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="startBatch" class="col-xs-2 control-label">起批量：</label>
+                        <div class="col-xs-10 textShow">
+                            <input  type="number" class="form-control" id="startBatch"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="stock" class="col-xs-2 control-label">库存：</label>
+                        <div class="col-xs-10 textShow">
+                            <input  type="number" class="form-control" id="stock"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="remark" class="col-xs-2 control-label">备注：</label>
+                        <div class="col-xs-10 textShow">
+                            <textarea name="" id="remark" class="form-control" style="resize: none;"></textarea>
+                        </div>
+                    </div>
+
+
+                    <!-- [[商品封面图 -->
+		            <div class="form-group">
+		                <label class="control-label col-xs-2">
+		                    商品封面图（最多5张）：
+		                </label>
+		                <div class="col-xs-10 imgArea" id="carouselImg">
+
+		                    <!-- [[添加图片 -->
+		                    <div class="col-xs-6 col-sm-2 col-lg-2">
+		                        <div class="img-content add-content">
+		                            <input type="file" accept="image/*" class="fileInp" name="files" />
+		                            <span class="add">&#43;</span>
+		                            <img src="" alt="" class="img-responsive" />
+		                            <input type="hidden" name="imgSrc" value=""/>
+		                            <span class="cancel" >&#88;</span>
+		                        </div>
+		                    </div><!-- 添加图片]] -->
+
+		                </div>
+		            </div><!-- [[商品封面图 -->
+
+                    <div class="form-group">
+                        <label for="detail" class="col-xs-2 control-label">详情介绍：</label>
+                        <div class="col-xs-10">
+                            <textarea name="detail" class="form-control" id="detail" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- [[商品附图 -->
+		            <div class="form-group">
+		                <label class="control-label col-xs-2">
+		                    商品附图（最多10张）：
+		                </label>
+		                <div class="col-xs-10 imgArea" id="illustration">
+
+		                    <!-- [[添加图片 -->
+		                    <div class="col-xs-6 col-sm-2 col-lg-2">
+		                        <div class="img-content add-content">
+		                            <input type="file" accept="image/*" class="fileInp" name="detailfiles" />
+		                            <span class="add">&#43;</span>
+		                            <img src="" alt="" class="img-responsive" />
+		                            <input type="hidden" name="imgSrc" value=""/>
+		                            <span class="cancel" >&#88;</span>
+		                        </div>
+		                    </div><!-- 添加图片]] -->
+
+		                </div>
+		            </div><!-- [[商品附图 -->
+
+                    <div class="from-group">
+                        <div class="col-xs-offset-2 col-xs-10">
+                            <button class="btn btn-primary"  type="submit">保存</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- 右边操作页面]] -->
+        </div>
+
+    </div>
+    <!-- 页面主体]] -->
+</div>
+<!-- wrapper]] -->
+
+<script src="./../../lib/jquery/jquery.min.js"></script>
+<script src="./../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./../../js/common.js"></script>
+<script src="./../../js/product.js"></script>
+
+</body>
+</html>

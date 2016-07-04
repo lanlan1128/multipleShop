@@ -1,0 +1,225 @@
+/* reset */
+header, footer, section, div, li, i {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.ui-list .icon {
+    font-size: 20px;
+    color: #f69;
+}
+.ui-dialog-bd {
+    text-align: center;
+}
+.uiDialogBdL {
+    text-align: left;
+}
+.uiDialogBdL  .ui-list{
+    margin-top: 10px;
+}
+
+.uiListNoLink >li {
+    margin-right: 15px;
+    padding-right: 0;
+}
+/*自定义按钮*/
+.productBtn {
+    background-color: #7D48A4;
+    color: #fff;
+    border-color: #7927B2;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.5,#793BA2),to(#7D48A4));
+}
+.productBtn:not(.disabled):not(:disabled):active, .productBtn.active {
+    background: #643189;
+    border-color: #643189;
+    color: rgba(255, 255, 255, 0.5);
+}
+.ui-btn-wrap .productBtn {
+    font-size: 16px;
+}
+.ui-btn-wrap button {
+    margin-bottom: 10px;
+}
+/* 颜色 */
+.themeColor {
+    color: #f69;
+}
+.unMarjorColor {
+    color: #999;
+}
+/* 通知面板 */
+.ui-notice {
+    height: 86%;
+}
+.ui-notice p {
+    line-height: 2;
+}
+.noticeClear p {
+    color: #000;
+}
+/*加载图标的位置*/
+.ui-loading {
+    background: url(./../image/loading_sprite.png);
+    background-size: auto 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
+}
+
+/* 一行文本溢出 */
+.oneLine {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* 两行文本溢出 */
+.intwoline {/*
+    text-overflow: -o-ellipsis-lastline;*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+}
+/*表格自增加樣式*/
+.table {
+    background-color: #fff;
+    margin: 10px 0;
+}
+.table tr th, .table tr td {
+    padding: 10px 0;
+}
+.table .imgTd img {
+    width: 40px;
+    height: 40px;
+}
+.table .textLeftTd {
+    text-align: left;
+    padding-left: 2%;
+}
+
+/* 分页 */
+.paging {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 两块内容之间的间距 */
+.gapT {
+    margin-top: 10px;
+}
+.gapB {
+    margin-bottom: 10px;
+}
+.gapTB {
+    margin: 10px 0;
+}
+.block {
+    background-color: #fff;
+    padding: 15px;
+    line-height: 1.8;
+}
+.table-responsive {
+    width: 100%;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+}
+.table-responsive  td:not([class='wrap']), .table-responsive th:not([class='wrap']) {
+    white-space: nowrap;
+}
+
+/* header */
+.ui-header {
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+/* footer */
+.ui-footer {
+    border-top: 1px solid rgb(224, 224, 224);
+}
+.ui-tiled {
+    height: 100%;
+}
+.footerItem > i, .footerItem > div {
+    line-height: 1;
+}
+.footerItem > div {
+    font-size: 10px;
+}
+.ui-tiled > li.active {
+    color: #f69;
+    border-bottom: 2px solid #f69;
+}
+.ui-tiled > li.active i {
+    color: #f69;
+}
+/* ui-container */
+.ui-container {
+    padding-bottom: 10px;
+}
+
+/* slider 轮播图 */
+.ui-slider img {
+    height: 100%;
+    width: 100%;
+}
+
+/* productList商品列表 */
+.productListWrapper {
+    padding: 12px 0 6px;
+}
+.productList {
+    background-color: #fff;
+    margin-bottom: 6px;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    display: block;
+    padding: 6px;
+}
+.productImg {
+    width: 100%;
+}
+.productName a{
+    color: #000;
+}
+.productSpec {
+    font-size: 12px;
+    color: #888;
+    display: block;
+    text-align: left;
+}
+.productMoney {
+    font-size: 16px;
+    color: #FF6699;
+}
+
+/*
+店家中心
+ */
+.picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/*点击态*/
+.clickActive {
+    background-color: #f5f5f5;
+}
+.hide {
+    display: none;
+}
+

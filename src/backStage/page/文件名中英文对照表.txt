@@ -1,0 +1,37 @@
+﻿平台  （backStage）
+
+1.首页         （index.html)
+
+2.用户管理     （userManage）
+(1)合伙人 		 	   	   -->  copartner.html     
+(2)端口    		 	       -->  port.html
+	(3)端口信息审核  	   -->  examin.html
+	(4)端口信息审核不通过  -->  checkNoPass.html
+	(5)端口信息审核通过    -->  checkPass.html
+(6)会员  		 	       -->  member.html
+
+3.商品管理       （productManage)
+(1)商品列表			       -->  produtList.html
+(2)发布商品                -->  productPublish.html
+	(3)预览商品信息        -->  previewProduct.html
+	(4)编辑商品详情        -->  editProduct.html
+(5)商品查询                -->  productQuery.html
+
+
+ 4.订单管理        （orderManage）
+ (1)订单列表               -->  orderList.html
+ (2)订单查询               -->  orderCheck.html
+	 (3)订单详情           -->  orderDetail.html
+	 (4)物流追踪           -->  logistics.html
+
+5.财务管理          （financingManage）
+(1)提现查询  			   -->  withQuery.html 
+(2)会员佣金提现			   -->  memberCommissionWidthdraw.html
+(3)端口贷款提现			   -->  portLoanWithdraw.html
+(4)端口佣金提现			   -->  portCommissionWithdraw.html
+(5)合伙人佣金提现		   -->  partnerCommissionWithdraw.html
+(6)平台佣金收入			   -->  platformCommissionIncome.html
+
+6.系统设置         （systemManage）
+(1)首页轮播                -->  indexCarousel.html
+(2)佣金参数                -->  commissionParameter.html

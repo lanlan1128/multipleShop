@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一内购后台管理系统</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet"  type="text/css" href="./../../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"  type="text/css" href="../../css/common.css">
+    <link rel="stylesheet"  type="text/css" href="../../css/components.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <!-- [[头部 -->
+    <header class="header">
+        <img src="" alt="一内购" class="logo">
+        <button class="btnExit" type="button"><span class="glyphicon glyphicon-off"></span>退出</button>
+    </header>
+    <!-- 头部]] -->
+
+    <!-- [[页面主体 -->
+    <div class="mainBody container-fluid">
+
+        <div class="row">
+
+            <!-- [[ 左边导航 -->
+            <ul class="col-md-3 col-lg-2 navigation" aria-expanded="true">
+                <li>
+                    <div class="navItem"><a href="./../index.html"><span class="glyphicon glyphicon-home"></span>首页</a></div>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-user"></span>用户管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../userManage/largeArea.html">大区列表</a></li>
+                        <li><a href="./../userManage/role.html">角色列表</a></li>
+                        <li><a href="./../userManage/shop.html">店家列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-tag"></span>商品管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../productManage/productList.html">商品列表</a></li>
+                        <li><a href="./../productManage/productPublish.html">发布商品</a></li>
+                        <li><a href="./../productManage/productQuery.html">商品查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-file"></span>订单管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../orderManage/orderList.html">订单列表</a></li>
+                        <li><a href="./../orderManage/orderCheck.html">订单查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-credit-card"></span>财务管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../financingManage/loadList.html">贷款列表</a></li>
+                        <li><a href="./../financingManage/recharge.html">充值列表</a></li>
+                        <li><a href="./../financingManage/taxList.html">会费列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-open"></span>提现管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../withdrawManage/largeCommission.html">大区佣金提现</a></li>
+                        <li><a href="./../withdrawManage/roleCommission.html">角色佣金提现</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-wrench"></span>系统设置</div>
+                    <ul class="subNav">
+                        <li><a href="./../systemManage/indexCarousel.html">首页轮播</a></li>
+                        <li><a href="./../systemManage/parameter.html">参数设置</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- 左边导航]] -->
+
+            <!-- [[右边操作页面 -->
+            <div class="content col-md-9 productDetail">
+
+                <!-- [[商品信息-->
+                <div class="table-responsive">
+                    <table class="table table-hover table-bordered tablestriped tableType2">
+                        <caption>商品信息</caption>
+                        <tbody>
+                        <tr>
+                            <td>商品编号：</td>
+                            <td>12334</td>
+                            <td>商品名：</td>
+                            <td>填写商品名</td>
+                        </tr>
+                        <tr>
+                            <td>零售价：</td>
+                            <td>12334元</td>
+                            <td>批发价：</td>
+                            <td>2323元</td>
+                        </tr>
+                        <tr>
+                            <td>倾销价：</td>
+                            <td>12334元</td>
+                            <td>倾销币：</td>
+                            <td>1334</td>
+                        </tr>
+                        <tr>
+                            <td>库存：</td>
+                            <td>12334</td>
+                            <td>起批量：</td>
+                            <td>343443</td>
+                        </tr>
+                        <tr>
+                            <td>运费：</td>
+                            <td>12334</td>
+                            <td>销量：</td>
+                            <td>2121</td>
+                        </tr>
+                        <tr>
+                            <td>备注：</td>
+                            <td colspan="3">这里是备注信息这里是备注信息这里是备注信息这里是备注信息</td>
+                        </tr>
+                        <tr>
+                            <td>商品图片：</td>
+                            <td colspan="3">
+                                <img src="./../../image/bg1.jpg" alt="">
+                                <img src="./../../image/bg1.jpg" alt="">
+                                <img src="./../../image/bg1.jpg" alt="">
+                                <img src="./../../image/bg1.jpg" alt="">
+                                <img src="./../../image/bg1.jpg" alt="">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- [[商品介绍-评价-->
+                <div class="introduce-evaluate text-left">
+                    <div class="tab clearfix">
+                        <span class="active">商品介绍</span>
+                        <span class="">商品评价</span>
+                    </div>
+                    <div class="introduce-content">
+                        <div class="introduce-msg">呵呵哒呵呵哒呵呵哒呵呵哒呵呵哒呵呵哒呵呵哒呵呵哒呵呵哒呵呵哒呵呵哒呵呵哒呵呵哒呵呵哒呵呵哒呵呵哒</div>
+                        <img src="../../image/carousel2.jpg" alt=""/>
+                    </div>
+                    <div class="evalute-content text-center" style="display: none;">
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <td>用户昵称</td>
+                                <td>产品规格</td>
+                                <td>评价</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>魔鬼的翅膀</td>
+                                <td>规格1</td>
+                                <td>真心不错啊</td>
+                            </tr>
+                            <tr>
+                                <td>我是撒旦</td>
+                                <td>规格2</td>
+                                <td>真心黑啊</td>
+                            </tr>
+                            <tr>
+                                <td>我是宙斯</td>
+                                <td>规格3</td>
+                                <td>骗你的啦</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 商品介绍-评价]]-->
+            </div>
+            <!-- 右边操作页面]] -->
+        </div>
+
+    </div>
+    <!-- 页面主体]] -->
+</div>
+<!-- wrapper]] -->
+
+<script src="./../../lib/jquery/jquery.min.js"></script>
+<script src="./../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./../../js/common.js"></script>
+<script src="./../../js/product.js"></script>
+<script>
+    var dom = {
+        $span : $('.tab').find('span'),
+        $introduce : $('.introduce-content'),
+        $evalute : $('.evalute-content')
+    };
+
+    //*产品详情tab*//
+    dom.$span.on('click',function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+
+        var index = $(this).index();
+
+        if(index == 0){
+            dom.$introduce.show();
+            dom.$evalute.hide();
+        }else{
+            dom.$introduce.hide();
+            dom.$evalute.show();
+        }
+    });
+
+    /* 备注tooltip */
+    $('#myRemark').bind('click',function(){
+        $(this).siblings('.tooltip').toggle();
+    });
+    $('#myRemark').bind('mouseover',function(){
+        $(this).siblings('.tooltip').fadeIn();
+    });
+    $('#myRemark').bind('mouseout',function(){
+        $(this).siblings('.tooltip').fadeOut();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+{
+  "orders": {
+      "id": 10,
+      "number": 199,
+      "status": 0,
+      "prices": 133131,
+      "setTime": "Apr 18, 2016 10:37:53 AM",
+      "name": "黄伟杰",
+      "address": "华南农业大学",
+      "phone": "18814127384",
+      "D": 0,  // 状态  0未完成 1完成 2已关闭
+      "F": 0,  // 付款  
+      "P": 0,  // 配送
+      "T": 0,  // 退换
+      "C": 0,  // 评论
+      "roles": {
+        "id": 3,
+        "name": "五山吹神",
+        "img": "http://wx.qlogo.cn/mmopen/iasviadbxQfVzEhpzETtekaQwsCTR2aIqOdtXeHk3cmOPF63hTRa6ND7n5hfsmYZSruRSqeEzMgv3dbOWiazI8Biavrbgbpzw3ch/0",
+        "OpenId": "ogxiiv3QjIIGIcp5mwsIB73QBOwI",
+        "areas": {
+          "id": 15,
+          "OpenId": "ogxiivyzaY6KDIneot8Pr1ITvLSk",
+          "name": "恶霸",
+          "img": "http://wx.qlogo.cn/mmopen/K6CEv0Hv9DcQMJwtSgy0IGU8xvqHhf0fkvcS46veE0II3A73jTGXgyKOFoexCRqJRThYkG1R9icicJV5t3ia2LticjRic4VibarIGw/0",
+          "flag": 18539,
+          "totalCommission": 0,
+          "exitCommission": 0
+        },
+        "totalCommission": 0,
+        "exitCommission": 0
+      },
+      "rolesProfit": 7960,
+      "areas": {
+        "id": 15,
+        "OpenId": "ogxiivyzaY6KDIneot8Pr1ITvLSk",
+        "name": "恶霸",
+        "img": "http://wx.qlogo.cn/mmopen/K6CEv0Hv9DcQMJwtSgy0IGU8xvqHhf0fkvcS46veE0II3A73jTGXgyKOFoexCRqJRThYkG1R9icicJV5t3ia2LticjRic4VibarIGw/0",
+        "flag": 18539,
+        "totalCommission": 0,
+        "exitCommission": 0
+      },
+      "areaProfit": 11940,
+      "user": {
+        "id": 13,
+        "OpenId": "ogxiiv6A4pSOKRHgF-i6Zmq_CPx0",
+        "username": "黄伟杰",
+        "img": "http://wx.qlogo.cn/mmopen/EkSywuicLs5hO3HI8xjibhFaibR3kxKqmawanA02heM7tqXWW1ib1PWN3SduCRJymiacPe9sc4ibRMzm0Kq7uWXHk73L8bttjTtcM8/0",
+        "sign": 1,
+        "count": 812,
+        "usecount": 188,
+        "roles": {
+          "id": 3,
+          "name": "五山吹神",
+          "img": "http://wx.qlogo.cn/mmopen/iasviadbxQfVzEhpzETtekaQwsCTR2aIqOdtXeHk3cmOPF63hTRa6ND7n5hfsmYZSruRSqeEzMgv3dbOWiazI8Biavrbgbpzw3ch/0",
+          "OpenId": "ogxiiv3QjIIGIcp5mwsIB73QBOwI",
+          "areas": {
+            "id": 15,
+            "OpenId": "ogxiivyzaY6KDIneot8Pr1ITvLSk",
+            "name": "恶霸",
+            "img": "http://wx.qlogo.cn/mmopen/K6CEv0Hv9DcQMJwtSgy0IGU8xvqHhf0fkvcS46veE0II3A73jTGXgyKOFoexCRqJRThYkG1R9icicJV5t3ia2LticjRic4VibarIGw/0",
+            "flag": 18539,
+            "totalCommission": 0,
+            "exitCommission": 0
+          },
+          "totalCommission": 0,
+          "exitCommission": 0
+        }
+      }
+    },
+    "orderProduct": [
+      {
+        "id": 36,
+        "count": 199,
+        "prices": 669,
+        "name": "SWatch",
+        "good_id": 5,
+        "describes": "这不仅仅是一个表",
+        "orders": {
+          "id": 10,
+          "number": 199,
+          "status": 0,
+          "prices": 133131,
+          "setTime": "Apr 18, 2016 10:37:53 AM",
+          "name": "黄伟杰",
+          "address": "华南农业大学",
+          "phone": "18814127384",
+          "D": 0,
+          "F": 0,
+          "P": 0,
+          "T": 0,
+          "C": 0,
+          "roles": {
+            "id": 3,
+            "name": "五山吹神",
+            "img": "http://wx.qlogo.cn/mmopen/iasviadbxQfVzEhpzETtekaQwsCTR2aIqOdtXeHk3cmOPF63hTRa6ND7n5hfsmYZSruRSqeEzMgv3dbOWiazI8Biavrbgbpzw3ch/0",
+            "OpenId": "ogxiiv3QjIIGIcp5mwsIB73QBOwI",
+            "areas": {
+              "id": 15,
+              "OpenId": "ogxiivyzaY6KDIneot8Pr1ITvLSk",
+              "name": "恶霸",
+              "img": "http://wx.qlogo.cn/mmopen/K6CEv0Hv9DcQMJwtSgy0IGU8xvqHhf0fkvcS46veE0II3A73jTGXgyKOFoexCRqJRThYkG1R9icicJV5t3ia2LticjRic4VibarIGw/0",
+              "flag": 18539,
+              "totalCommission": 0,
+              "exitCommission": 0
+            },
+            "totalCommission": 0,
+            "exitCommission": 0
+          },
+          "rolesProfit": 7960,
+          "areas": {
+            "id": 15,
+            "OpenId": "ogxiivyzaY6KDIneot8Pr1ITvLSk",
+            "name": "恶霸",
+            "img": "http://wx.qlogo.cn/mmopen/K6CEv0Hv9DcQMJwtSgy0IGU8xvqHhf0fkvcS46veE0II3A73jTGXgyKOFoexCRqJRThYkG1R9icicJV5t3ia2LticjRic4VibarIGw/0",
+            "flag": 18539,
+            "totalCommission": 0,
+            "exitCommission": 0
+          },
+          "areaProfit": 11940,
+          "user": {
+            "id": 13,
+            "OpenId": "ogxiiv6A4pSOKRHgF-i6Zmq_CPx0",
+            "username": "黄伟杰",
+            "img": "http://wx.qlogo.cn/mmopen/EkSywuicLs5hO3HI8xjibhFaibR3kxKqmawanA02heM7tqXWW1ib1PWN3SduCRJymiacPe9sc4ibRMzm0Kq7uWXHk73L8bttjTtcM8/0",
+            "sign": 1,
+            "count": 812,
+            "usecount": 188,
+            "roles": {
+              "id": 3,
+              "name": "五山吹神",
+              "img": "http://wx.qlogo.cn/mmopen/iasviadbxQfVzEhpzETtekaQwsCTR2aIqOdtXeHk3cmOPF63hTRa6ND7n5hfsmYZSruRSqeEzMgv3dbOWiazI8Biavrbgbpzw3ch/0",
+              "OpenId": "ogxiiv3QjIIGIcp5mwsIB73QBOwI",
+              "areas": {
+                "id": 15,
+                "OpenId": "ogxiivyzaY6KDIneot8Pr1ITvLSk",
+                "name": "恶霸",
+                "img": "http://wx.qlogo.cn/mmopen/K6CEv0Hv9DcQMJwtSgy0IGU8xvqHhf0fkvcS46veE0II3A73jTGXgyKOFoexCRqJRThYkG1R9icicJV5t3ia2LticjRic4VibarIGw/0",
+                "flag": 18539,
+                "totalCommission": 0,
+                "exitCommission": 0
+              },
+              "totalCommission": 0,
+              "exitCommission": 0
+            }
+          }
+        },
+        "stauts": 0,
+        "areaProfit": 11940,
+        "roleProfit": 7960
+      }
+    ]
+}

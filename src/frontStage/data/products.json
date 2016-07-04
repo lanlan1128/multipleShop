@@ -1,0 +1,9 @@
+var products = {
+	'page' : 0,
+	'pages' : 3,
+	products : {
+		'product1' {
+			name : ' '
+		}
+	}
+}

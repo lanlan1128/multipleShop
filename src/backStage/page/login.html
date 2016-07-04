@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一内购后台管理系统-登录页面</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./../css/common.css">
+    <link rel="stylesheet" type="text/css" href="./../css/components.css">
+
+    <style>
+        html,body {
+            height: 100%;
+        }
+        body {
+            background: url(../image/bg1.jpg) right bottom no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login_panel">
+        <div class="login_header"><h1>一内购后台登录</h1></div>
+        <div class="login_body">
+            <form class="form-horizontal">
+                <div id="loginTip"></div>
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                    <input type="text" class="form-control" id="userName" placeholder="用户名">
+                </div>
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="密码" onkeydown="keyCheck()">
+                </div>
+                <div class="input-group">
+                    <button type="button" class="btn btn-info" id="login_btn">登录</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="./../lib/jquery/jquery.min.js"></script>
+    <script src="./../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./../js/components.js"></script>
+
+</body>
+</html>

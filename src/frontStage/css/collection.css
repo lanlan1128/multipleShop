@@ -1,0 +1,145 @@
+html {
+	font-size: 100px;  /*浏览器限制*/
+}
+body {
+	font-size: 14px;
+}
+
+/* tab */
+.collectNav {
+	background-color: #fff;
+	text-align: center;
+}
+.collectNav li a {
+	display: inline-block;
+	padding: 8px 12px;
+	color: #555;
+}
+.collectNav li.active a{
+	color: #f69;
+	border-bottom: 2px solid #f69;
+}
+
+/* list */
+.listWrap {
+	margin-top: 10px;
+	background-color: #fff;
+}
+
+.list::-webkit-scrollbar {
+	height: 0;
+}
+.list {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	white-space: nowrap;
+}
+.main, .list .del {
+	display: inline-block;
+	vertical-align: top;
+} 
+.main {
+	width: 100%;
+	padding: 0.1rem 0;
+	color: #333;
+}
+.main:not(:nth-last-child(1)) {
+	border-bottom: 1px solid #e5e5e5;
+}
+.main img {
+	margin: 0 .06rem;
+}
+.mainRight {
+	position: relative;
+}
+.mainRight .name {
+	font-size: 0.16rem;
+}
+.mainRight .ui-row {
+	position: absolute;
+	left: 0;
+	right: 0.06rem;
+	bottom: 0;
+	color: #999;
+}
+
+.del {
+	width: 0.66rem;
+	text-align: center;
+	background-color: #F55549;
+	color: #fff;
+	font-size: 0.16rem;
+}
+
+/*店铺*/
+.shopMain img{
+	width: 0.6rem;
+	height: 0.6rem;
+}
+.shopMain .mainRight {
+	height: .6rem;
+	margin-left: 0.72rem;
+}
+.shopMain .mainRight .name {
+	width: 80%;
+}
+.shopMain + .del {
+	line-height: 0.8rem;
+}
+/*商品*/
+.productMain img{
+	width: 1rem;
+	height: 1rem;
+}
+.productMain .mainRight {
+	height: 1rem;
+	margin-left: 1.16rem;
+}
+.productMain .mainRight .name {
+	white-space: normal;
+}
+.productMain + .del {
+	line-height: 1.2rem;
+}
+
+/*消息列表*/
+.messageMain img{
+	width: 0.6rem;
+	height: 0.6rem;
+}
+.messageMain .mainRight {
+	height: .6rem;
+	margin-left: 0.72rem;
+}
+.messageMain .mainRight .name {
+	padding-right: 0.06rem;
+}
+.messageMain + .del {
+	line-height: 0.8rem;
+}
+.messageMain .content {
+	color: #666;
+	margin-top: 0.06rem;
+	padding-right: .6rem;
+	position: relative;
+}
+.messageMain .content .time {
+	position: absolute;
+	right: 0.06rem;
+	top: 0;
+}
+
+/*消息详情*/
+.messageDetail {
+	padding: 10px;
+	background-color: #fff;
+}
+.messageTitle {
+	font-weight: bold;
+}
+.time {
+	color: #999;
+}
+.messageDetail .content {
+	padding: 16px 0;
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>百城万店倾销网</title>
+
+    <link rel="stylesheet" type="text/css" href="./../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/index.css">
+    <style>
+        .ui-container {
+            /* 若推广码有背景图 */
+            background-color: #f69;
+            color: #fff;
+            /*   background: url(./../image/2.jpg);
+               background-size: contain;*/
+            position: relative;
+        }
+        .center {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+        }
+        .centerImg {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<header class="ui-header ui-header-stable ui-border-b">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1>我的店家推广码</h1>
+</header>
+
+<footer class="ui-footer ui-footer-stable ui-border-t">
+    <ul class="ui-tiled">
+        <li class="footerItem"><i class="ui-icon-personal" onclick="window.location.href='./largeAreaCenter.html'"></i><div>大区中心</div></li>
+    </ul>
+</footer>
+
+<section class="ui-container">
+
+    <div class="center">
+        <img src="./../image/code.jpg" alt="角色二维码" class="centerImg" />
+        <p>扫描上面的二维码立即成为角色用户</p>
+    </div>
+
+</section>
+
+<script src="./../lib/js/zepto.min.js"></script>
+<script src="./../lib/js/frozen.js"></script>
+<script>
+    $(document).ready(function(){
+        var mainHeight = $(window).height() - $('.ui-header').height() - $('ui-footer').height();
+        $('.ui-container').height(mainHeight);
+    })
+</script>
+
+</body>
+</html>

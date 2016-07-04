@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百城万店-会费列表</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./../../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/components.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <!-- [[头部 -->
+    <header class="header container-fluid">
+        <div class="row">
+            <div class="col-xs-3">
+                <img src="../image/logo.jpg" alt="一内购" class="logo img-responsive">
+                <button class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="col-xs-6 header_center">
+                <h1 class="websiteName">百城万店倾销网平台</h1>
+            </div>
+            <div class="col-xs-3">
+                <button class="btnExit fr" type="button"><span class="glyphicon glyphicon-off"></span>退出</button>
+            </div>
+        </div>
+    </header><!-- 头部]] -->
+
+    <!-- [[页面主体 -->
+    <div class="mainBody container-fluid">
+
+        <div class="row">
+
+            <!-- [[ 左边导航 -->
+            <ul class="col-md-3 col-lg-2 navigation" aria-expanded="true">
+                <li>
+                    <div class="navItem"><a href="./../index.html"><span class="glyphicon glyphicon-home"></span>首页</a></div>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-user"></span>用户管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../userManage/largeArea.html">大区列表</a></li>
+                        <li><a href="./../userManage/role.html">角色列表</a></li>
+                        <li><a href="./../userManage/shop.html">店家列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-tag"></span>商品管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../productManage/productList.html">商品列表</a></li>
+                        <li><a href="./../productManage/productPublish.html">发布商品</a></li>
+                        <li><a href="./../productManage/productQuery.html">商品查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-file"></span>订单管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../orderManage/orderList.html">订单列表</a></li>
+                        <li><a href="./../orderManage/orderCheck.html">订单查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-credit-card"></span>财务管理</div>
+                    <ul class="subNav" style="display: block;">
+                        <li class="list"><a href="./../financingManage/loadList.html">贷款列表</a></li>
+                        <li><a href="./../financingManage/recharge.html">充值列表</a></li>
+                        <li><a href="./../financingManage/taxList.html">会费列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-open"></span>提现管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../withdrawManage/largeCommission.html">大区佣金提现</a></li>
+                        <li><a href="./../withdrawManage/roleCommission.html">角色佣金提现</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-wrench"></span>系统设置</div>
+                    <ul class="subNav">
+                        <li><a href="./../systemManage/indexCarousel.html">首页轮播</a></li>
+                        <li><a href="./../systemManage/parameter.html">参数设置</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- 左边导航]] -->
+
+            <!-- [[右边操作页面 -->
+            <div class="content col-md-10 logisticsTrace">
+
+                <div class="alert alert-success" role="alert">待收入佣金：<label class="money1">23888</label><label class="money2">.23</label></div>
+                <div class="alert alert-info" role="alert">可支配佣金：<label class="money1">23888</label><label class="money2">.23</label></div>
+
+                <!-- [[平台佣金提现列表 -->
+                <div class="table-responsive">
+                    <table class="table table-hover table-bordered tablestriped">
+                        <tbody>
+                        <tr>
+                            <td>图像</td>
+                            <td class="textLeft">昵称</td>
+                            <td>缴费时间</td>
+                            <td class="textRight">缴费金额（元）</td>
+                            <td>状态</td>
+                        </tr>
+                        <tr>
+                            <td class="imgTd">
+                                <img src="./../../image/bg1.jpg" alt="">
+                            </td>
+                            <td  class="textLeft"></td>
+                            <td></td>
+                            <td class="textRight">12</td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div><!-- [[平台佣金提现列表 -->
+
+                <!-- [[分页-->
+                <div class="paging">
+                    <span class="prev btn btn-primary">上一页</span>
+                    <span class="next btn btn-primary">下一页</span>
+                </div>
+                <!-- 分页]]-->
+
+            </div>
+            <!-- 右边操作页面]] -->
+        </div>
+
+    </div>
+    <!-- 页面主体]] -->
+</div>
+<!-- wrapper]] -->
+
+
+<script src="./../../lib/jquery/jquery.min.js"></script>
+<script src="./../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./../../js/common.js"></script>
+
+</body>
+</html>

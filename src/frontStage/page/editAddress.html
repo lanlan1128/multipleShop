@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>百城万店倾销网</title>
+
+    <link rel="stylesheet" type="text/css" href="./../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/index.css">
+    <link rel="stylesheet" type="text/css" href="./../css/address.css">
+    <link rel="stylesheet" type="text/css" href="./../font/iconfont.css">
+
+</head>
+<body>
+
+<header class="ui-header ui-header-stable ui-border-b">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1>编辑收货地址</h1>
+</header>
+
+<footer class="ui-footer ui-footer-stable ui-border-t">
+    <ul class="ui-tiled">
+        <li class="footerItem active" onclick="window.location.href='./index.html'"><i class="ui-icon-home"></i><div>首页</div></li>
+        <li class="footerItem"><i class="ui-icon-cart" onclick="window.location.href='./shopCart.html'"></i><div>购物车</div></li>
+        <li class="footerItem"><i class="ui-icon-personal" onclick="window.location.href='./storecenter.html'"></i><div>个人中心</div></li>
+    </ul>
+</footer>
+
+<section class="ui-container">
+
+    <div class="ui-form ui-border-t">
+        <form action="#">
+            <div class="ui-form-item ui-form-item-show ui-border-b">
+                <label for="#">姓名</label>
+                <input type="text" value="邱梦兰">
+            </div>
+            <div class="ui-form-item ui-form-item-show ui-border-b">
+                <label for="#">联系方式</label>
+                <input type="text" value="15017536463">
+            </div>
+            <div class="ui-form-item ui-form-item-show ui-border-b">
+                <label>省</label>
+                <div class="ui-select">
+                    <select>
+                        <option>广东省</option>
+                        <option selected>湖南省</option>
+                        <option>云南省</option>
+                    </select>
+                </div>
+            </div>
+            <div class="ui-form-item ui-form-item-show ui-border-b">
+                <label>市</label>
+                <div class="ui-select">
+                    <select>
+                        <option>汕尾市</option>
+                        <option selected>兴宁市</option>
+                        <option>广州市</option>
+                    </select>
+                </div>
+            </div>
+            <div class="ui-form-item ui-form-item-show ui-border-b">
+                <label>区/县/镇</label>
+                <div class="ui-select">
+                    <select>
+                        <option>2014</option>
+                        <option selected>2015</option>
+                        <option>2016</option>
+                    </select>
+                </div>
+            </div>
+            <div class="ui-form-item ui-form-item-show ui-border-b">
+                <label for="#">详细地址</label>
+                <input type="text" value="五山学生公寓">
+            </div>
+            <div class="ui-form-item ui-form-item-checkbox ui-border-b">
+                <label class="ui-checkbox">
+                    <input type="checkbox">
+                </label>
+                <p>设为默认收货地址</p>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="ui-btn-wrap">
+        <button class="ui-btn-lg productBtn">
+            保存
+        </button>
+        <button class="ui-btn-lg">
+            取消
+        </button>
+    </div>
+
+</section>
+
+
+<script src="./../lib/js/zepto.min.js"></script>
+<script src="./../lib/js/frozen.js"></script>
+<script src="./../js/index.js"></script>
+
+</body>
+</html>

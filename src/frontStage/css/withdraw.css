@@ -1,0 +1,17 @@
+.iconfont.withdrawIcon {
+    display: block;
+    font-size: 80px;
+    color: #f4c600;
+    text-align: center;
+    margin-top: 26%;
+}
+p {
+    text-align: center;
+    line-height: 2;
+}
+.inputWithdraw {
+    margin-top: 40px;
+}
+.inputWithdraw input{
+    text-align: center;
+}

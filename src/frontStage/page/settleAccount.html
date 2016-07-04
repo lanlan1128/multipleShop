@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>百城万店倾销网</title>
+
+    <link rel="stylesheet" type="text/css" href="./../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/index.css">
+    <link rel="stylesheet" type="text/css" href="./../css/product.css">
+
+</head>
+<body>
+
+<header class="ui-header ui-header-stable ui-border-b">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1>结算中心</h1>
+</header>
+
+<footer class="ui-footer ui-footer-stable ui-border-t">
+    <ul class="ui-tiled">
+        <li class="footerItem active" onclick="window.location.href='./index.html'"><i class="ui-icon-home"></i><div>首页</div></li>
+        <li class="footerItem"><i class="ui-icon-cart" onclick="window.location.href='./shopCart.html'"></i><div>购物车</div></li>
+        <li class="footerItem"><i class="ui-icon-personal" onclick="window.location.href='./storecenter.html'"></i><div>个人中心</div></li>
+    </ul>
+</footer>
+
+<section class="ui-container">
+
+    <!-- [[收货地址 -->
+
+    <!-- 若没有收货地址-->
+    <ul class="ui-list ui-border-tb ui-list-link ui-list-active">
+        <li class="ui-list-info" onclick="window.location.href='./myReceiptAddress.html'">选择收货地址</li>
+    </ul>
+
+    <section class="receiveInfo">
+        <p><span>邱梦兰</span><span style="float: right;">15017536465</span></p>
+        <p style="color:#848689;">广东省广州市天河区误杀学生公寓</p>
+        <b class="borderT"></b>
+        <b class="borderB"></b>
+    </section><!-- [[收货地址 -->
+
+    <div class="productsBox ui-border-tb">
+        <!-- [[单个商品 -->
+        <div class="productBox ui-border-b">
+
+            <div class="col imgCol">
+                <img src="./../image/1.jpg" alt="">
+            </div>
+
+            <div class="col describeCol">
+                <h4 class="intwoline productName">自然堂雪域精粹纯粹滋润冰肌水自然堂雪域精粹纯粹滋润冰肌水</h4>
+                <p class="setBottom"><span class="unMarjorColor">x2</span><span>&#165; 345.00</span></p>
+            </div>
+
+        </div><!-- 单个商品]] -->
+        <!-- [[单个商品 -->
+        <div class="productBox ui-border-b">
+
+            <div class="col imgCol">
+                <img src="./../image/1.jpg" alt="">
+            </div>
+
+            <div class="col describeCol">
+                <h4 class="intwoline productName">自然堂雪域精粹纯粹滋润冰肌水自然堂雪域精粹纯粹滋润冰肌水</h4>
+                <p class="setBottom"><span class="unMarjorColor">x2</span><span>&#165; 345.00</span></p>
+            </div>
+
+        </div><!-- 单个商品]] -->
+    </div>
+
+    <!-- [[价格合计 -->
+    <ul class="countBlock ui-border-b">
+        <li>商品合计： <sapn class="themeColor">&#165; 123.00</sapn>（共四件）</li>
+        <li>运费合计： <sapn class="themeColor">&#165; 10.00</sapn></li>
+    </ul><!-- 价格合计]] -->
+
+    <div class="ui-btn-wrap">
+        <button class="ui-btn-lg productBtn">
+            提交订单
+        </button>
+    </div>
+
+</section>
+
+
+<script src="./../lib/js/zepto.min.js"></script>
+<script src="./../lib/js/frozen.js"></script>
+<script src="./../js/index.js"></script>
+
+</body>
+</html>

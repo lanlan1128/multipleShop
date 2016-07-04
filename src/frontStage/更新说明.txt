@@ -1,0 +1,114 @@
+﻿4月6
+1.更新lib文件夹里的frozen.js  (修正点透问题)
+2.购物车  引入了新建的js   shopCart.js     (添加了修改产品数量的校验  只能是数字且数字必须大于0小于最大库存量)
+
+3.我的倾销币：myDumpingMoney.html    （1）去充值按钮的页面跳转写在js里（提高流畅性）
+				     （2）表格 时间栏排版有改变
+				     （3）待付款两种状态  （倾销币足 和 倾销币不足）
+
+4.个人中心：  两块内容增加间距   增加类gapTB
+
+
+5.我的订单：待付款：   【订单操作项】：  买家：取消订单   去付款         		平台：取消订单（把钱退回去）
+	    待发货：   【订单操作项】：  买家：提醒卖家发货              		平台：发货                        【订单项操作】：  买家：退款       卖家：同意退款/拒绝退款
+	    待收货：   【订单操作项】：  买家：查看物流    确认收货      		平台：查看物流
+	    待评价：   【订单操作项】：  买家：查看物流    评价（商品分开评价）		平台：查看物流
+	    已关闭：   【订单操作项】：  买家：删除订单	 				平台：查看评价
+
+	    退款/售后:  订单项展示【订单项操作项】：买家：钱款去向      买家：钱款去向
+
+订单状态的切换： 同步 ？ 异步   =》   没有哪个好不好的区分，不同场合有不同的需求，一般事件驱动的环境需要异步，例如传统的窗口应用程序，点了按钮之后启动异步事件，事件到达的时候再进行处理，此时的窗口是可以操作的。而在传统的命令行驱动应用中，是需要同步的，应用发出任务后就一直等待，直到反馈数据才完成，例如NET.EXE。
+                         	      -》重复请求的问题 和 多次不同请求（上次和这次的请求怎么处理）
+		按钮切换 (完成)
+
+6.推广码  roleExtensionCode.html   largeExtensionCode.html    二维码居中
+
+7.充值页面：   输入框的动态监测
+
+4月20：
+解决数据排版乱的问题：
+table外层包裹一个div  <div class="table-responsive"></div>  div：table-responsive{overflow-x:auto;}   td不换行要加css属性：white-space:nowrap(一行显示的原因:某些不想一行显示的可以加换行符<br/>),所以对于要换行的表格单元要加‘nowrap’ 类
+参考：withdrawDetail.html页面
+更新index.css文件 因为加了table-responsive类
+
+
+4月22
+我的收货地址：
+页面加入了（删除按钮）  样式表address.css要更新
+
+
+4月25
+增加填写物流信息页面   editLogisticInfo.html
+
+4月26
+1.商品数量选择包括 最小值和最大值的范围（设定好）
+
+2.首页 查看倾销价 对话框  按钮修改成立即支付 （<div>查看需要支付<span class="productMoney">XX</span>倾销币</div> 价格用一个元素包裹来突出）
+
+3.购物车商品总价变为商品单价  （所以js商品价格要修改）
+修改步骤：1.把页面的单价data-unitPrice属性去掉
+	  2.js页面 把函数editPrice去掉 （所有调用editPrice函数的地方改为调用acountPrice）
+/*总价的计算*/
+function acountPrice() {
+
+    var totalPrice = 0;
+    var price;
+    $('.productBox').each(function(index,value){
+        var num = parseFloat( $(value).find('input[title="number"]').val() );
+        var price = parseFloat( $(value).find('.price').text().substr(1) );
+        totalPrice = parseFloat(parseFloat(totalPrice) + parseFloat(num*price)).toFixed(2);
+    });
+
+    $('#amount').html('&#165; ' + totalPrice);
+}
+
+5月4日
+更新订单详情的评论内容 更新了productDetail.html和produt.css
+功能点： 点击不同的 评论按钮  会把相对应的评论内容保存起来
+	提交的数据包括商品id和评论内容，提交后评论按钮移除
+
+5月9号：
+更新首页点击进入详情的区域（整个区都可以）
+更新地方： index.html   最后面的script
+
+
+5月11：
+更新首页的商品图片大小 限定大小为1:1
+更新地方：index.html 的 script区
+
+5月12：
+1.首页： 轮播图加了底部border  
+修改地方：index.html  （【【【ui-border-b】】】新增）
+ <!-- [[轮播图 -->
+<div class="ui-slider 【【【ui-border-b】】】" id="carouselContainer">
+    <ul class="ui-slider-content" style="width: 300%">
+        <li><img src="./../image/carousel1.jpg" alt=""></li>
+        <li><img src="./../image/carousel2.jpg" alt=""></li>
+        <li><img src="./../image/carousel3.jpg" alt=""></li>
+    </ul>
+</div><!-- 轮播图]] -->
+2.商品详情页 商品基本信息(排版做了更改),  
+修改地方：prodctDetail.html  （【【【新增】】】）
+<p class="specText"><span>零售价：</span><span class="themeColor">&#165;123.09</span></p>
+<p class="specText"><span>市场价：</span><span class="themeColor">&#165;123.09</span></p>
+<p class="specText"><span>运【【【&nbsp;&nbsp;&nbsp;&nbsp;】】】费：</span>123</p>
+<p class="specText"><span>库【【【&nbsp;&nbsp;&nbsp;&nbsp;】】】存：</span><span id="stock">3</span></p>
+<p class="specText"><span>起批量：</span>123</p>
+<p class="specText"><span>销【【【&nbsp;&nbsp;&nbsp;&nbsp;】】】量：</span>123</p>
+更新product.css
+3.加入购物车固定在窗口
+修改地方：productDetail.html 以及 底部的script部分    
+		<!-- 加入购物车悬浮按钮 -->
+		 <a class="addCartBtnFix"><i class="ui-icon-cart"></i></a>
+		<!-- /加入购物车悬浮按钮 -->
+
+
+5月27：
+1.商品详情加上 收藏按钮
+  注意版面布局变了  新增了js
+
+2.店家中心页 加上 我的消息和我的收藏 两个列表项  storeCenter.html
+
+3.新增 我的店铺收藏  我的商品收藏  我的消息  和 消息详情
+  其中我的消息用ajax加载不同类 （ 到时候把接口给我  我来调用:) ）
+

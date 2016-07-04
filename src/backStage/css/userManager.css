@@ -1,0 +1,75 @@
+/*
+ * time:2016/3/19
+ *  author:leeboo
+ */
+@import "./common.css";
+
+/*用户管理--合伙人*/
+.userManager-copartner .paging{
+    margin-top: 20px;
+}
+.userManager-copartner .paging span:last-child{
+    margin-left: 100px;
+}
+
+/*用户管理--端口*/
+.userManager-port .statue{
+    margin-bottom: 20px;
+}
+.userManager-port .paging{
+    margin-top: 20px;
+}
+.userManager-port .paging span:last-child{
+    margin-left: 100px;
+}
+
+/*用户管理--会员*/
+.userManager-port .top{
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+/*用户审核*/
+.userManager-check .message > div{
+    width: 40%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.userManager-check .img-content{
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    margin-top: 20px;
+}
+.userManager-check .img-content .img{
+    float: left;
+    width: 20%;
+}
+.userManager-check .img-content .img span{
+    display: block;
+    margin-top: 10px;
+}
+.userManager-check .img-content img{
+    width: 90%;
+}
+.userManager-check .checkBtn{
+    margin-top: 20px;
+}
+.userManager-check .checkBtn button:last-child{
+    margin-left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

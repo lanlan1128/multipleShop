@@ -1,0 +1,28 @@
+.blockInfo {
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    line-height: 1.8;
+    position: relative;
+}
+.icon.RTIcon, .icon.ui-icon-delete {
+    position: absolute;
+    right: 15px;
+    font-size: 24px;
+    color: #00b3ee;
+    line-height: 50px;
+    text-align: right;
+    width: 60px;
+}
+.RTIcon {
+    top: 0;
+}
+.icon.ui-icon-delete {
+    bottom: 0;
+    font-size: 28px;
+}
+
+.ui-checkbox input:checked:before, .ui-checkbox-s input:checked:before {
+    content: "";
+    color: #f69;
+}

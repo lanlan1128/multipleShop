@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>百城万店倾销网</title>
+
+    <link rel="stylesheet" type="text/css" href="./../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/index.css">
+    <link rel="stylesheet" type="text/css" href="./../css/product.css">
+    <link rel="stylesheet" type="text/css" href="./../font/iconfont.css">
+
+</head>
+<body>
+
+    <header class="ui-header ui-header-stable ui-border-b">
+        <i class="ui-icon-return" onclick="history.back()"></i>
+        <h1>订单详情</h1>
+    </header>
+
+    <footer class="ui-footer ui-footer-stable ui-border-t">
+        <ul class="ui-tiled">
+            <li class="footerItem active" onclick="window.location.href='./index.html'"><i class="ui-icon-home"></i><div>首页</div></li>
+            <li class="footerItem"><i class="ui-icon-cart" onclick="window.location.href='./shopCart.html'"></i><div>购物车</div></li>
+            <li class="footerItem"><i class="ui-icon-personal" onclick="window.location.href='./storecenter.html'"></i><div>个人中心</div></li>
+        </ul>
+    </footer>
+
+    <section class="ui-container">
+
+        <ul class="ui-list ui-list-text ui-border-tb">
+            <li>
+                <h4 class="ui-nowrap">订单编号:123456794974123974</h4>
+            </li>
+        </ul>
+        <ul class="ui-list ui-list-text ui-border-b ui-list-link ui-list-active">
+            <li>
+                <h4 class="ui-nowrap"><i class="icon iconfont">&#xe600;</i> 查看物流信息</h4>
+            </li>
+        </ul>
+
+        <section class="receiveInfo">
+            <p><span>邱梦兰</span><span style="float: right;">15017536465</span></p>
+            <p style="color:#848689;">广东省广州市天河区误杀学生公寓</p>
+            <b class="borderT"></b>
+            <b class="borderB"></b>
+        </section>
+
+        <ul class="order ui-list ui-list-text ui-border-tb uiListNoLink">
+            <!-- [[订单商品 -->
+            <li class="ui-border-b">
+                <div class="ui-list-thumb">
+                    <img src="./../image/1.jpg" alt="">
+                </div>
+                <div class="ui-list-info textMid">
+                    <h4 class="ui-nowrap">性别</h4>
+                </div>
+                <div class="textRight">
+                    <p class="">&#165; 20.11</p>
+                    <p class="unMarjorColor">X2</p>
+                    <button class="ui-btn productBtn commentBtn" data-comment="">评论</button>
+                </div>
+            </li><!-- 订单商品]] -->
+            <!-- [[订单商品 -->
+            <li class="ui-border-b">
+                <div class="ui-list-thumb">
+                    <img src="./../image/1.jpg" alt="">
+                </div>
+                <div class="ui-list-info productLink textMid">
+                    <h4 class="ui-nowrap">性别</h4>
+                </div>
+                <div class="textRight">
+                    <p class="">&#165; 20.11</p>
+                    <p class="unMarjorColor">X2</p>
+                    <button class="ui-btn productBtn commentBtn" data-comment="">评论</button>
+                </div>
+            </li><!-- 订单商品]] -->
+        </ul>
+        <div class="countBlock ui-border-b">
+            <p>商品合计： <span class="themeColor">&#165; 123.00</span>（共四件）</p>
+            <p>运费合计： <span class="themeColor">&#165; 10.00</span></p>
+        </div>
+        <div class="countBlock ui-border-b">
+            <p>下单时间： <span class="">2016-03-09  15：11：50</span></p>
+            <p>付款时间： <span class="">2016-03-09  15：11：50</span></p>
+            <p>发货时间： <span class="">暂未发货</span></p>
+        </div>
+
+        <!-- [[联系热线 -->
+        <div class="ui-row ui-border-tb block gapTB contact">
+            <div class="ui-col ui-col-50">
+                <a href="tel:telephonenumber" class="icon iconfont" id="phone" >&#xe601;</a>
+                <label for="phone">拨打平台热线</label>
+            </div>
+            <div class="ui-col ui-col-50">
+                <a href="tencent://message/?uin=2965366058" class="icon iconfont" id="qq">&#xe602;
+                </a>
+                <label for="qq">联系平台服务</label>
+            </div>
+        </div><!-- 联系热线]] -->
+
+    </section>
+
+    <!-- comment -->
+    <section class="ui-input-wrap ui-border-t hide myComment">
+        <div class="ui-input ui-border-radius">
+            <input type="text" name="" value="" placeholder="写下你对产品的评论吧...">
+        </div>
+        <button class="ui-btn" id="submitComment">评论</button>
+    </section>
+    <!-- /comment -->
+
+    <script src="./../lib/js/zepto.min.js"></script>
+    <script src="./../lib/js/frozen.js"></script>
+    <script src="./../js/index.js"></script>
+    <script>
+      // 填写评论
+      var $myComment = $('.myComment');
+      var $commentInput = $('.myComment input');
+      var $hasComment;  
+      var index; 
+
+      $('.commentBtn').each(function(i,value){
+        value.i = i;
+
+        $(this).tap(function(){
+
+            if( this.i == index){
+                $myComment.toggleClass('hide');
+                $(this).attr("data-comment", $commentInput.val());
+            }else {
+                $commentInput.val( $(this).attr("data-comment") );
+                $myComment.removeClass('hide');
+                $hasComment = $(this);
+                index = this.i;
+            }
+
+        });
+
+      });
+
+      // 提交评论
+      $('#submitComment').tap(function(e){
+
+        var comment =  $.trim($('.myComment input').val());
+        if( comment == "") {
+             el=$.tips({
+                content:' 评论内容不能为空哦~ ',
+                stayTime:2000,
+                type:"success"
+            });
+        }else {
+            $.ajax({
+                type: 'GET',
+                url: '?productId=' + index +'&comment=' +comment,
+                success: function(){
+                    el=$.tips({
+                        content:' 评论成功',
+                        stayTime:2000,
+                        type:"success"
+                    }); 
+                    
+                    // 防止点透
+                    setTimeout(function(){
+                        $('.myComment').addClass('hide');
+                        // 删除评论按钮
+                        $hasComment.remove();
+                    },300);
+
+                },
+                error: function(){
+                    el=$.tips({
+                        content:' 评论失败',
+                        stayTime:2000,
+                        type:"success"
+                    });
+                }
+            })
+        }
+      });
+
+      // 触摸隐藏评论
+      $(".ui-container").on('touchmove',function(e){
+        $('.myComment').addClass('hide');
+      });
+    </script>
+    
+</body>
+</html>

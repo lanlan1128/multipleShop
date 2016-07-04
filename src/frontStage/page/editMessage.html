@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>百城万店倾销网</title>
+
+    <link rel="stylesheet" type="text/css" href="./../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/index.css">
+    <link rel="stylesheet" type="text/css" href="./../css/collection.css">
+
+</head>
+<body>
+
+    <header class="ui-header ui-header-stable ui-border-b">
+        <h1>编辑消息</h1>
+    </header>
+
+    <footer class="ui-footer ui-footer-stable ui-border-t">
+        <ul class="ui-tiled">
+            <li class="footerItem" onclick="window.location.href='./index.html'"><i class="ui-icon-home"></i><div>首页</div></li>
+            <li class="footerItem"><i class="ui-icon-cart" onclick="window.location.href='./shopCart.html'"></i><div>购物车</div></li>
+            <li class="footerItem active"><i class="ui-icon-personal" onclick="window.location.href='./storecenter.html'"></i><div>个人中心</div></li>
+        </ul>
+    </footer>
+
+    <section class="ui-container">
+
+        <div class="ui-form ui-border-t">
+		    <form action="#">
+		        <div class="ui-form-item ui-border-b">
+		            <label>
+		                消息标题
+		            </label>
+		            <input type="text" placeholder="填写消息标题 ">
+		            <a href="#" class="ui-icon-close">
+		            </a>
+		        </div>
+		        <div class="ui-form-item ui-form-item-textarea ui-border-b">
+		            <label>
+		                消息内容
+		            </label>
+		            <textarea placeholder="街道等详细地址"></textarea>
+		        </div>
+		        <div class="ui-form-item ui-border-b">
+		            <label>
+		                接收用户
+		            </label>
+		            <input type="text" placeholder="填写接收用户">
+		            <a href="#" class="ui-icon-close">
+		            </a>
+		        </div>
+		     	
+		     	<div class="ui-btn-wrap">
+	                <button class="ui-btn-lg productBtn">
+	                    提交
+	                </button>
+	            </div>
+
+		    </form>
+		</div>
+
+    </section>
+
+    <!-- 浮层提示 -->
+    <div class="ui-poptips ui-poptips-info delTip hide">
+        <div class="ui-poptips-cnt"><i></i>删除成功</div>
+    </div>
+
+    <script src="./../lib/js/zepto.min.js"></script>
+    <script src="./../lib/js/frozen.js"></script>
+    <script src="./../js/index.js"></script>
+    <script src="./../js/message.js"></script>
+
+</body>
+</html>

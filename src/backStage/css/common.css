@@ -1,0 +1,257 @@
+﻿/* add */
+.popover-content {
+    font-family: 'Segoe UI',Arial,'Microsoft Yahei',sans-serif;
+}
+.control-label {
+    font-family: 'Segoe UI',Arial,'Microsoft Yahei',sans-serif;
+}
+textarea.form-control {
+    resize: none;
+    height: 120px;
+}
+
+.wrapper {
+    min-width: 480px;
+}
+/* header */
+.header {
+    background-color: #41C1E7;
+    color: #fff;
+}
+.header_center {
+    text-align: center;
+}
+.header > .row > div > * {
+    height: 60px;
+    padding: 10px;
+    line-height: 40px;
+    margin: 0;
+}
+.logo {
+    display: none;
+}
+.navbar-toggle {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    float: left;
+}
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+    display: block;
+    width: 30px;
+    height: 2px;
+    border-radius: 1px;
+}
+.websiteName {
+    font-size: 22px;
+    margin: 0;
+}
+.btnExit {
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.mainBody {
+    padding: 0 20px;
+    background-color: #F5F7FA;
+}
+/* 导航 */
+.navigation {
+    display: none;
+}
+
+/* 侧边导航 */
+.navigation {
+    color: #666;
+    background-color: #fff;
+    padding: 10px 20px 30px;
+    border-right: 1px solid #D6D6D6;
+    box-shadow: 1px 0px  4px 1px #ddd;
+    margin-left: -4px;
+}
+.navigation a{
+    display: block;
+    text-decoration: none;
+}
+.navItem {
+    color: #666;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #ddd;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.navItem > a {
+    color: #666;
+}
+.navItem.active > a {
+    color: #fff;
+}
+.navItem .glyphicon {
+    width: 30px;
+    text-align: center;
+}
+.subNav {
+    border-radius: 0 0 4px 4px;
+    border: 1px solid #ddd;
+    border-top: none;
+    display: none;
+    padding: 8px 0;
+}
+.subNav > li > a{
+    padding: 8px 0 8px 40px;
+    font-weight: bold;
+}
+.subNav > li a:hover{
+    background-color: #f5f5f5;
+    color: #337ab7;
+}
+.active {
+    background-color: #41C1E7;
+    color: #fff;
+}
+/* 内容展示区 */
+.content {
+    padding: 40px 15px;
+}
+
+/* 媒体查询 */
+/* 平板 */
+@media screen and (min-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+}
+/* 中等屏幕 */
+@media screen and (min-width: 992px) {
+    .navigation, .logo {
+        display: block;
+    }
+    .navbar-toggle {
+        display: none;
+    }
+}
+/* 超大屏幕 */
+@media screen and (min-width: 1200px) {
+    body {
+        background: url(../image/background.png);
+        padding: 40px 0;
+    }
+    .wrapper {
+        width: 85%;
+        min-width: 1200px;
+        margin: 0 auto;
+        background-color: #fff;
+        border: 1px solid #D6D6D6;
+        border-radius: 6px;
+        box-shadow: 0px 0px  6px 1px #ddd;
+    }
+    .content {
+        padding: 40px 40px;
+    }
+    .navigation {
+        display: block;
+    }
+}
+
+li {
+   list-style: none;
+}
+ul{
+    padding-left: 0;
+}
+.fr {
+    float: right;
+}
+.fl {
+    float: left;
+}
+
+/* table自定义样式 */
+.table {
+    background-color: #fff;
+    font-family: 'Segoe UI',Arial,'Microsoft Yahei',sans-serif;
+}
+.table .imgTd {
+   width: 60px;
+}
+.table .imgTd img{
+    width: 100%;
+}
+.textLeft {
+    text-align: left;
+    padding-left: 2%;
+}
+.textRight {
+    text-align: right;
+    padding-right: 2%;
+}
+.table caption {
+    font-weight: bold;
+    text-align: center;
+    color: #41C1E7;
+    line-height: 34px;
+}
+.table thead tr th{
+    color: #41C1E7;
+    border-bottom-width: 0;
+}
+.table>tbody>tr>td {
+    vertical-align: middle;
+}
+.table_a {
+    display: inline-block;
+    width: 50px;
+    padding: 10px;
+    vertical-align: top;
+}
+.nav-tabs {
+    margin-bottom: 40px;
+}
+.tableType2 {
+    margin: 30px auto;
+}
+.tableType2 tr td:nth-child(odd){
+    padding-right: 20px;
+    text-align: right;
+    width: 120px;
+}
+.tableType2 tr td:nth-child(even){
+    padding-left: 20px;
+    text-align: left;
+    color: #acacac;
+}
+
+/* 一行显示 */
+.inOneLine {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* tab选项卡 */
+.tab {
+    margin-bottom: 26px;
+}
+/* 分页器 */
+.paging {
+    margin-top: 40px;
+    text-align: center;
+}
+.paging .next {
+    margin-left: 50px;
+}
+.operate {
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+
+
+
+

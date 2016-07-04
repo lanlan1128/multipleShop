@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>百城万店倾销网</title>
+
+    <link rel="stylesheet" type="text/css" href="./../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/index.css">
+    <link rel="stylesheet" type="text/css" href="./../css/collection.css">
+
+</head>
+<body>
+
+    <header class="ui-header ui-header-stable ui-border-b">
+        <h1>我的收藏</h1>
+    </header>
+
+    <footer class="ui-footer ui-footer-stable ui-border-t">
+        <ul class="ui-tiled">
+            <li class="footerItem" onclick="window.location.href='./index.html'"><i class="ui-icon-home"></i><div>首页</div></li>
+            <li class="footerItem"><i class="ui-icon-cart" onclick="window.location.href='./shopCart.html'"></i><div>购物车</div></li>
+            <li class="footerItem active"><i class="ui-icon-personal" onclick="window.location.href='./storecenter.html'"></i><div>个人中心</div></li>
+        </ul>
+    </footer>
+
+    <section class="ui-container">
+
+        <!-- tab -->
+        <ul class="ui-row collectNav">
+            <li class="ui-col ui-col-50 active">
+                <a href="./myCollectionShop.html">店铺</a>
+            </li>
+            <li class="ui-col ui-col-50">
+                <a href="./myCollectProduct.html">商品</a>
+            </li>
+        </ul>
+
+        <!-- collection list -->
+        <ul class="listWrap">
+
+            <li class="list">
+                <a class="main shopMain">
+                    <img src="../image/shop1.png" alt="" class="pull-left">
+                    <div class="mainRight">
+                        <p class="name oneLine">什么什么店铺</p>
+
+                        <ul class="ui-row listRB">
+                            <li class="ui-col ui-col-33 oneLine">销量:20000+</li>
+                            <li class="ui-col ui-col-33 text-center oneLine">库存:123</li>
+                            <li class="ui-col ui-col-33 text-right oneLine">收藏:234</li>
+                        </ul>
+
+                    </div>
+                </a>
+                <div class="del">删除</div>
+            </li>
+
+            <li class="list">
+                <a class="main shopMain">
+                    <img src="../image/shop2.jpg" alt="" class="pull-left">
+                    <div class="mainRight">
+                        <p class="name oneLine">自然堂雪域精粹纯粹滋润冰肌自然堂雪域精粹纯粹滋润冰肌</p>
+
+                        <ul class="ui-row">
+                            <li class="ui-col ui-col-33 oneLine">销量:50000+</li>
+                            <li class="ui-col ui-col-33 text-center oneLine">库存:123</li>
+                            <li class="ui-col ui-col-33 text-right oneLine">收藏:234</li>
+                        </ul>
+
+                    </div>
+                </a>
+                <div class="del">删除</div>
+            </li>
+
+        </ul>
+
+        <!-- 分页 -->
+        <div class="paging">
+            <button class="ui-btn">上一頁</button>
+            <button class="ui-btn">下一頁</button>
+        </div>
+
+    </section>
+
+    <!-- 浮层提示 -->
+    <div class="ui-poptips ui-poptips-info delTip hide">
+        <div class="ui-poptips-cnt"><i></i>删除成功</div>
+    </div>
+
+    <script src="./../lib/js/zepto.min.js"></script>
+    <script src="./../lib/js/frozen.js"></script>
+    <script src="./../js/index.js"></script>
+    <script src="./../js/collect.js"></script>
+
+</body>
+</html>

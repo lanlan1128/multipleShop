@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>百城万店倾销网</title>
+
+    <link rel="stylesheet" type="text/css" href="./../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/index.css">
+
+</head>
+<body>
+
+<header class="ui-header ui-header-stable ui-border-b">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1>角色联系方式</h1>
+</header>
+
+<footer class="ui-footer ui-footer-stable ui-border-t">
+    <ul class="ui-tiled">
+        <li class="footerItem"><i class="ui-icon-personal" onclick="window.location.href='./storecenter.html'"></i><div>角色中心</div></li>
+    </ul>
+</footer>
+
+<section class="ui-container">
+
+    <div class="ui-form ui-border-t">
+        <form action="#">
+            <div class="ui-form-item ui-form-item-show ui-border-b">
+                <label for="userName">姓名</label>
+                <input type="text" value="邱梦兰" id="userName">
+            </div>
+            <div class="ui-form-item ui-form-item-show ui-border-b">
+                <label for="contact">联系方式</label>
+                <input type="tel" value="15017536436" id="contact">
+            </div>
+            <div class="ui-form-item ui-form-item-show ui-border-b">
+                <label for="email">常用邮箱</label>
+                <input type="email" value="2965366042@qq.com" id="email">
+            </div>
+        </form>
+    </div>
+
+    <div class="ui-btn-wrap">
+        <button class="ui-btn-lg productBtn">
+            保存
+        </button>
+    </div>
+
+</section>
+
+<script src="./../lib/js/zepto.min.js"></script>
+<script src="./../lib/js/frozen.js"></script>
+<script class="demo-script">
+    $(".ui-dialog").dialog("show");
+</script>
+
+</body>
+</html>

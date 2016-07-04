@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>百城万店倾销网</title>
+
+    <link rel="stylesheet" type="text/css" href="./../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/index.css">
+    <link rel="stylesheet" type="text/css" href="./../css/product.css">
+    <style>
+        #toRechargeBtn {
+           margin: 32px 15px 0 0;
+        }
+    </style>
+
+</head>
+<body>
+
+<header class="ui-header ui-header-stable ui-border-b">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1>我的倾销币</h1>
+</header>
+
+<footer class="ui-footer ui-footer-stable ui-border-t">
+    <ul class="ui-tiled">
+        <li class="footerItem" onclick="window.location.href='./index.html'"><i class="ui-icon-home"></i><div>首页</div></li>
+        <li class="footerItem"><i class="ui-icon-cart" onclick="window.location.href='./shopCart.html'"></i><div>购物车</div></li>
+        <li class="footerItem"><i class="ui-icon-personal" onclick="window.location.href='./storecenter.html'"></i><div>个人中心</div></li>
+    </ul>
+</footer>
+
+<section class="ui-container">
+
+    <!-- [[统计 -->
+    <ul class="ui-list ui-border-tb commissionTop">
+        <li class="ui-border-t">
+            <div class="ui-avatar">
+                <img src="./../image/1.jpg" alt="">
+            </div>
+            <div class="ui-list-info">
+                <h4 class="ui-nowrap">可使用：<span class="themeColor" id="myDumpingNum"> 45</span></h4>
+                <h4 class="ui-nowrap">已使用：<span class="themeColor">4</span></h4>
+            </div>
+            <div>
+                <button class="ui-btn productBtn" id="toRechargeBtn">去充值</button>
+            </div>
+        </li>
+    </ul> <!-- 统计]] -->
+
+    <!-- [[倾销币使用记录 -->
+    <table class="table ui-table ui-border ui-border-tb">
+        <thead>
+        <tr>
+            <th>时间</th>
+            <th>类别</th>
+            <th>数量</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                2016-03-09
+                <br />15:12:50
+            </td>
+            <td>充值</td>
+            <td>1000</td>
+            <td>已完成</td>
+        </tr>
+        <tr>
+            <td>
+                2016-03-09
+                <br />15:12:50
+            </td>
+            <td>充值</td>
+            <td class="dumpingNum">1000</td>
+            <td><button class="ui-btn productBtn oligationBtn">待付款</button></td>
+        </tr>
+        <tr>
+            <td>
+                2016-03-09
+                <br />15:12:50
+            </td>
+            <td>充值</td>
+            <td class="dumpingNum">10</td>
+            <td><button class="ui-btn productBtn oligationBtn">待付款</button></td>
+        </tr>
+        </tbody>
+    </table><!-- 倾销币使用记录]] -->
+
+    <div class="paging">
+        <button class="ui-btn">上一頁</button>
+        <button class="ui-btn">下一頁</button>
+    </div>
+
+</section>
+
+<!-- [[充值-->
+<div class="ui-dialog" id="rechargeDialog">
+    <div class="ui-dialog-cnt">
+        <header class="ui-dialog-hd ui-border-b">
+            <h3>余额不足</h3>
+            <i class="ui-dialog-close" data-role="button"></i>
+        </header>
+        <div class="ui-dialog-bd uiDialogBdL">
+            <div>
+                <p>倾销币数量：<span class="themeColor">123</span></p>
+                <p>充值金额：<span class="themeColor">&#165;12.22</span></p>
+                <ul class="ui-list ui-list-text ui-list-radio">
+                    <li class="ui-border-t">
+                        <label class="ui-radio">
+                            <input type="radio" name="radio">
+                        </label>
+                        <p>微信支付</p>
+                    </li>
+                    <li class="ui-border-t">
+                        <label class="ui-radio">
+                            <input type="radio" checked name="radio">
+                        </label>
+                        <p>银联支付</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ui-dialog-ft">
+            <button type="button" data-role="button">取消</button>
+            <button type="button" data-role="button">付款</button>
+        </div>
+    </div>
+</div><!-- 充值]] -->
+
+<script src="./../lib/js/zepto.min.js"></script>
+<script src="./../lib/js/frozen.js"></script>
+<script class="demo-script">
+    /* 去充值 */
+    $('#toRechargeBtn').tap(function(){
+        window.location.href = "./recharge.html";
+    });
+
+    /* 待付款 */
+    $('.oligationBtn').tap(function() {
+        var myDumpingNum = parseInt( $('#myDumpingNum').text() );
+        var dumpingNum = parseInt ( $(this).parents('tr').find('.dumpingNum').text() );
+        console.log( myDumpingNum + '  ' + dumpingNum);
+        if ( dumpingNum <= myDumpingNum ) {
+            /* 直接支付 */
+            var payDia = $.dialog({
+                title: "确定支付",
+                content: "需要花费<span class='themeColor'> " + dumpingNum + "</span> 个倾销币",
+                button: ["取消","确定"]
+            });
+            payDia.on('dialog:action',function(e){
+                if(e.index == 1) {
+                    /* 支付成功提示 */
+                    $.tips({
+                        content:'支付成功',
+                        stayTime:2000,
+                        type:"success"
+                    });
+                }
+            });
+        }else {
+            /* 先充值 */
+            var rechargeDialog = $('#rechargeDialog')
+            rechargeDialog.dialog("show");
+            rechargeDialog.on("dialog:action",function(e){
+                if(e.index == 2) {
+                    /* 支付成功提示 */
+                    $.tips({
+                        content:'支付成功',
+                        stayTime:2000,
+                        type:"success"
+                    });
+                }
+
+            });
+        }
+    });
+</script>
+
+</body>
+</html>

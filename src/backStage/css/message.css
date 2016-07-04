@@ -1,0 +1,10 @@
+/*消息内容*/
+.messageTd {
+	width: 400px;
+}
+.messageTd p.message {
+	width: 360px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

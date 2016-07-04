@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>百城万店倾销网</title>
+
+    <link rel="stylesheet" type="text/css" href="./../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/index.css">
+    <link rel="stylesheet" type="text/css" href="./../css/address.css">
+    <link rel="stylesheet" type="text/css" href="./../font/iconfont.css">
+
+</head>
+<body>
+
+<header class="ui-header ui-header-stable ui-border-b">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1>我的收货地址</h1>
+</header>
+
+<footer class="ui-footer ui-footer-stable ui-border-t">
+    <ul class="ui-tiled">
+        <li class="footerItem active" onclick="window.location.href='./index.html'"><i class="ui-icon-home"></i><div>首页</div></li>
+        <li class="footerItem"><i class="ui-icon-cart" onclick="window.location.href='./shopCart.html'"></i><div>购物车</div></li>
+        <li class="footerItem"><i class="ui-icon-personal" onclick="window.location.href='./storecenter.html'"></i><div>个人中心</div></li>
+    </ul>
+</footer>
+
+<section class="ui-container">
+
+    <ul class="ui-list-active address">
+        <li class="addressInfo blockInfo ui-border-tb addressList" >
+            <input type="hidden" value="" class="addressId"/>
+            <p>姓名：</p>
+            <p>电话：</p>
+            <p>地址：</p>
+            <button class="icon iconfont RTIcon" onclick="window.location.href='./editAddress.html'">&#xe603;</button>
+            <button class="icon iconfont ui-icon-delete"></button>
+        </li>
+    </ul>
+
+    <div class="ui-btn-wrap">
+        <button class="ui-btn-lg productBtn" onclick="window.location.href='./addAddress.html'">
+            新增收货地址
+        </button>
+    </div>
+
+
+</section>
+
+
+<script src="./../lib/js/zepto.min.js"></script>
+<script src="./../lib/js/frozen.js"></script>
+<script>
+    $('.address').on('tap','.addressList',function(){
+        /*地址的id*/
+        var id = parseInt( $(this).find('.addressId').val() );
+        $.ajax({
+            url: '_URL_',
+            type: 'GET',
+            data: id
+        });
+    });
+
+    $(".addressInfo").click(function(e){
+        if(e.target !== $(this).find(".RTIcon")[0] ){
+            alert();
+        }
+    })
+</script>
+
+</body>
+</html>

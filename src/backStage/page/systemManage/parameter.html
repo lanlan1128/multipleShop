@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百城万店-参数设置</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./../../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="./../../css/systemManager.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <!-- [[头部 -->
+    <header class="header container-fluid">
+        <div class="row">
+            <div class="col-xs-3">
+                <img src="../image/logo.jpg" alt="一内购" class="logo img-responsive">
+                <button class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="col-xs-6 header_center">
+                <h1 class="websiteName">百城万店倾销网平台</h1>
+            </div>
+            <div class="col-xs-3">
+                <button class="btnExit fr" type="button"><span class="glyphicon glyphicon-off"></span>退出</button>
+            </div>
+        </div>
+    </header><!-- 头部]] -->
+
+    <!-- [[页面主体 -->
+    <div class="mainBody container-fluid">
+
+        <div class="row">
+
+            <!-- [[ 左边导航 -->
+            <ul class="col-md-3 col-lg-2 navigation" aria-expanded="true">
+                <li>
+                    <div class="navItem"><a href="./../index.html"><span class="glyphicon glyphicon-home"></span>首页</a></div>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-user"></span>用户管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../userManage/largeArea.html">大区列表</a></li>
+                        <li><a href="./../userManage/role.html">角色列表</a></li>
+                        <li><a href="./../userManage/shop.html">店家列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-tag"></span>商品管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../productManage/productList.html">商品列表</a></li>
+                        <li><a href="./../productManage/productPublish.html">发布商品</a></li>
+                        <li><a href="./../productManage/productQuery.html">商品查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-file"></span>订单管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../orderManage/orderList.html">订单列表</a></li>
+                        <li><a href="./../orderManage/orderCheck.html">订单查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-credit-card"></span>财务管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../financingManage/loadList.html">贷款列表</a></li>
+                        <li><a href="./../financingManage/recharge.html">充值列表</a></li>
+                        <li><a href="./../financingManage/taxList.html">会费列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-open"></span>提现管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../withdrawManage/largeCommission.html">大区佣金提现</a></li>
+                        <li><a href="./../withdrawManage/roleCommission.html">角色佣金提现</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-wrench"></span>系统设置</div>
+                    <ul class="subNav" style="display: block;">
+                        <li><a href="./../systemManage/indexCarousel.html">首页轮播</a></li>
+                        <li  class="active"><a href="./../systemManage/parameter.html">参数设置</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- 左边导航]] -->
+
+            <!-- [[右边操作页面 -->
+            <div class="content col-md-10 parameter">
+
+
+                <form action="">
+                        <legend>倾销币参数</legend>
+                            <div class="form-group">
+                                <label >入会金额：</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control"  placeholder="">
+                                    <div class="input-group-addon">元</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>送币量：</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+
+                        <div class="form-group">
+                            <label >一个倾销币的金额：</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control"  placeholder="">
+                                <div class="input-group-addon">元</div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">更新</button>
+                </form>
+
+                <form action="" style="margin-top: 40px;">
+                        <legend>佣金参数</legend>
+
+                        <div class="form-group">
+                            <label >大区抽佣：</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control"  placeholder="">
+                                <div class="input-group-addon">%</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label >角色抽佣：</label>
+                        </div>
+                        <div class="form-group roleRow clearfix">
+                            <p class="roleCol1">
+                                <span class="blockage text-right">0</span>
+                                <span class="symbol">&#60;</span>人数<span class="symbol">≤</span>
+                                <input type="text" class="blockage" id="input1" data-accept="number" /> 
+                            </p>
+                            <div class="roleCol2 input-group">
+                                <input type="text" class="form-control"  placeholder="">
+                                <div class="input-group-addon">%</div>
+                            </div>
+                        </div>
+                        <div class="form-group roleRow clearfix">
+                            <p class="roleCol1">
+                                <input type="text" class="blockage" id="input2" data-accept="number" /> 
+                                <span class="symbol">&#60;</span>人数<span class="symbol">≤</span>
+                                <input type="text" class="blockage" id="input3" data-accept="number" /> 
+                            </p>
+                            <div class="roleCol2 input-group">
+                                <input type="text" class="form-control"  placeholder="">
+                                <div class="input-group-addon">%</div>
+                            </div>
+                        </div>
+                        <div class="form-group roleRow clearfix">
+                            <p class="roleCol1">
+                                <input type="text" class="blockage" id="input4" data-accept="number" />
+                                <span class="symbol">&#60;</span>人数<span class="symbol"></span>
+                                <span class="blockage"></span>
+                            </p>
+                            <div class="roleCol2 input-group">
+                                <input type="text" class="form-control"  placeholder="">
+                                <div class="input-group-addon">%</div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">更新</button>
+                </form>
+
+            </div>
+            <!-- 右边操作页面]] -->
+        </div>
+
+    </div>
+    <!-- 页面主体]] -->
+</div>
+<!-- wrapper]] -->
+
+<script src="./../../lib/jquery/jquery.min.js"></script>
+<script src="./../../js/common.js"></script>
+<script>
+    $(function(){
+
+        var dom = {
+            input1: $('#input1'),
+            input2: $('#input2'),
+            input3: $('#input3'),
+            input4: $('#input4')
+        }
+
+        dom.input1.keyup(function(){
+            dom.input2.val($(this).val());
+        });
+        dom.input3.keyup(function(){
+            dom.input4.val($(this).val());
+        });
+
+        dom.input3.blur(function(){
+            if( parseInt( $(this).val() ) < parseInt(dom.input2.val()) ){
+                alert('最大人数不应小于最小人数');
+                $(this).val('');
+                dom.input4.val('');
+            }
+
+        });
+
+        /*输入框只能输入数字*/
+        $("input[data-accept='number']").keyup(function() {
+            this.value = this.value.replace(/\D/g, "");
+        });
+
+    });
+</script>
+
+</body>
+</html>

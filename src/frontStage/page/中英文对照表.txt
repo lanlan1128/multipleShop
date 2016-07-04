@@ -1,0 +1,26 @@
+首页：      	index.html   //√
+商品详情： 		productDetail.html  //√
+店家中心：  	storecenter.html   //√
+订单详情：  	orderDetail.html    //√
+购物车：    	shopCart.html     //√
+结算中心:   	settleAccount.html   //√
+我的订单:   	orderList.html     //√
+我的收货地址：  myReceiptAddress.html   //√
+新增收货地址：  addAddress.html
+编辑收货地址：  editAddress.html
+物流追踪：      logistics.html
+我的倾销币:     myDumpingAddress.html  //√
+倾销币充值：    recharge.html
+角色中心：      roleCenter.html
+角色的店家推广码：  暂定
+角色/大区的分佣订单: subCommission.html
+角色下的店家：  storeList.html
+角色的联系方式：roleContactWay.html
+大区中心：      largeAreaCenter.html
+大区下的角色：  roleList.html
+大区的推广码：  	暂定
+会员认证：      memberCertification.html     //√
+角色/大区的提现明细：roleWithdraw.html -> withdrawDetail.html
+
+4.25
+填写物流信息    editLogisticInfo.html

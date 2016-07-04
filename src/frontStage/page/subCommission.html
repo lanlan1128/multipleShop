@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>百城万店倾销网</title>
+
+    <link rel="stylesheet" type="text/css" href="./../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/index.css">
+    <link rel="stylesheet" type="text/css" href="./../css/product.css">
+    <link rel="stylesheet" type="text/css" href="./../font/iconfont.css">
+
+</head>
+<body>
+
+<header class="ui-header ui-header-stable ui-border-b">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1>分佣订单</h1>
+</header>
+
+<footer class="ui-footer ui-footer-stable ui-border-t">
+    <ul class="ui-tiled">
+        <li class="footerItem"><i class="ui-icon-personal" onclick="window.location.href='./storecenter.html'"></i><div>角色中心</div></li>
+    </ul>
+</footer>
+
+<section class="ui-container">
+
+    <!-- [[佣金统计 -->
+    <ul class="ui-list ui-border-tb commissionTop">
+        <li class="ui-border-t">
+            <div class="ui-avatar">
+                <img src="./../image/1.jpg" alt="">
+            </div>
+            <div class="ui-list-info">
+                <h4 class="ui-nowrap">可提现佣金：<span class="themeColor">&#165; 456.00</span></h4>
+                <h4 class="ui-nowrap">待收益佣金：<span class="themeColor">&#165; 456.00</span></h4>
+            </div>
+        </li>
+    </ul> <!-- 佣金统计]] -->
+
+    <ul class="ui-border-tb ui-list">
+        <!-- [[订单头部 -->
+        <li class="ui-border-b">
+            <div class="ui-list-info">
+                <h4>时间：2016-01-02 12:12:12</h4>
+            </div>
+            <div class="ui-list-info" style="text-align: right;">
+                <div class="ui-list-action"><span class="themeColor">已结算</span></div>
+            </div>
+        </li><!-- 订单头部]] -->
+        <!-- [[单个商品 -->
+        <div class="productBox ui-border-b">
+
+            <div class="col imgCol">
+                <img src="./../image/1.jpg" alt="">
+            </div>
+
+            <div class="col describeCol">
+                <p>昵称：张三</p>
+                <p>金额：&#165; 1314.30</p>
+                <p>佣金：&#165; 1314.20</p>
+                <p>订单状态：待收货</p>
+            </div>
+
+        </div><!-- 单个商品]] -->
+    </ul>
+    <ul class="ui-border-tb ui-list">
+        <!-- [[订单头部 -->
+        <li class="ui-border-b">
+            <div class="ui-list-info">
+                <h4 class="ui-nowrap">时间：2016-01-02 12:12:12</h4>
+            </div>
+            <div class="ui-list-info" style="text-align: right;">
+                <div class="ui-list-action">佣金状态：<span class="themeColor">已结算</span></div>
+            </div>
+        </li><!-- 订单头部]] -->
+        <!-- [[单个商品 -->
+        <div class="productBox ui-border-b">
+
+            <div class="col imgCol">
+                <img src="./../image/1.jpg" alt="">
+            </div>
+
+            <div class="col describeCol">
+                <p>昵称：张三</p>
+                <p>金额：&#165; 1314.30</p>
+                <p>佣金：&#165; 1314.20</p>
+                <p>订单状态：待收货</p>
+            </div>
+
+        </div><!-- 单个商品]] -->
+    </ul>
+
+
+
+</section>
+
+
+<script src="./../lib/js/zepto.min.js"></script>
+<script src="./../lib/js/frozen.js"></script>
+<script src="./../js/index.js"></script>
+
+</body>
+</html>

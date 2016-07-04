@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>百城万店倾销网</title>
+
+    <link rel="stylesheet" type="text/css" href="./../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/index.css">
+
+</head>
+<body>
+
+<header class="ui-header ui-header-stable ui-border-b">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1>角色列表</h1>
+</header>
+
+<footer class="ui-footer ui-footer-stable ui-border-t">
+    <ul class="ui-tiled">
+        <li class="footerItem"><i class="ui-icon-personal" onclick="window.location.href='./storecenter.html'"></i><div>大区中心</div></li>
+    </ul>
+</footer>
+
+<section class="ui-container">
+
+    <!-- [[店家列表 -->
+    <table class="table ui-table ui-border ui-border-tb">
+        <thead>
+        <tr>
+            <th>头像</th>
+            <th class="textLeftTd">姓名</th>
+            <th>联系方式</th>
+            <th class="textLeftTd">常用邮箱</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="imgTd">
+                <img src="./../image/1.jpg" alt="">
+            </td>
+            <td class="textLeftTd">张三</td>
+            <td>15017536465</td>
+            <td class="textLeftTd">731142721@qq.com</td>
+        </tr>
+        <tr>
+            <td class="imgTd">
+                <img src="./../image/1.jpg" alt="">
+            </td>
+            <td class="textLeftTd">张三峰</td>
+            <td>15017536465</td>
+            <td class="textLeftTd">7311421@qq.com</td>
+        </tr>
+        </tbody>
+    </table><!-- 店家列表]] -->
+
+    <div class="paging">
+        <button class="ui-btn">上一頁</button>
+        <button class="ui-btn">下一頁</button>
+    </div>
+
+</section>
+
+<script src="./../lib/js/zepto.min.js"></script>
+<script src="./../lib/js/frozen.js"></script>
+<script class="demo-script">
+    $(".ui-dialog").dialog("show");
+</script>
+
+</body>
+</html>

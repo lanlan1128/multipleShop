@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百城万店-消息编辑</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./../../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./../../css/common.css">
+    <link rel="stylesheet"  type="text/css" href="../../css/components.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <!-- [[头部 -->
+    <header class="header container-fluid">
+        <div class="row">
+            <div class="col-xs-3">
+                <img src="../image/logo.jpg" alt="一内购" class="logo img-responsive">
+                <button class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="col-xs-6 header_center">
+                <h1 class="websiteName">百城万店倾销网平台</h1>
+            </div>
+            <div class="col-xs-3">
+                <button class="btnExit fr" type="button"><span class="glyphicon glyphicon-off"></span>退出</button>
+            </div>
+        </div>
+    </header><!-- 头部]] -->
+
+    <!-- [[页面主体 -->
+    <div class="mainBody container-fluid">
+
+        <div class="row">
+
+            <!-- [[ 左边导航 -->
+            <ul class="col-md-3 col-lg-2 navigation" aria-expanded="true">
+                <li>
+                    <div class="navItem"><a href="./../index.html"><span class="glyphicon glyphicon-home"></span>首页</a></div>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-user"></span>用户管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../userManage/largeArea.html">大区列表</a></li>
+                        <li><a href="./../userManage/role.html">角色列表</a></li>
+                        <li><a href="./../userManage/shop.html">店家列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-tag"></span>商品管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../productManage/productList.html">商品列表</a></li>
+                        <li><a href="./../productManage/productPublish.html">发布商品</a></li>
+                        <li><a href="./../productManage/productQuery.html">商品查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-file"></span>订单管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../orderManage/orderList.html">订单列表</a></li>
+                        <li><a href="./../orderManage/orderCheck.html">订单查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-credit-card"></span>财务管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../financingManage/loadList.html">贷款列表</a></li>
+                        <li><a href="./../financingManage/recharge.html">充值列表</a></li>
+                        <li><a href="./../financingManage/taxList.html">会费列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-open"></span>提现管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../withdrawManage/largeCommission.html">大区佣金提现</a></li>
+                        <li><a href="./../withdrawManage/roleCommission.html">角色佣金提现</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-wrench"></span>系统设置</div>
+                    <ul class="subNav">
+                        <li><a href="./../systemManage/indexCarousel.html">首页轮播</a></li>
+                        <li><a href="./../systemManage/parameter.html">参数设置</a></li>
+                    </ul>
+                </li>
+                 <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-wrench"></span>收藏管理</div>
+                    <ul class="subNav" style="display: block;">
+                        <li class="active"><a href="../collectManage/shopList.html">店铺</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><a href="../messageManage/messageList.html"><span class="glyphicon glyphicon-home"></span>消息管理</a></div>
+                </li>
+            </ul> <!-- 左边导航]] -->
+
+            <!-- [[右边操作页面 -->
+            <div class="content col-md-10 ">
+
+                <form action="" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label" >消息类型：</label>
+                        <div class="col-xs-8">
+                            <select id="type" class="form-control">
+                            	<option value="">用户消息</option>
+                            	<option value="">系统消息</option>
+                            	<option value="">活动消息</option>
+                            	<option value="">优惠消息</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label  class="col-xs-2 control-label">消息内容：</label>
+                        <div class="col-xs-8">
+                            <textarea class="form-control" placeholder="填写消息内容"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label  class="col-xs-2 control-label">封面图：</label>
+                        <div class="col-xs-10">
+                            <div class="col-xs-2 img-content">
+                                <span class="add">+</span>
+                                <input  type="file" accept="image/*" name="" class="file"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-8 col-xs-offset-2">
+                    		<button type="submit" class="btn btn-primary">保存</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+            <!-- 右边操作页面]] -->
+        </div>
+
+    </div>
+    <!-- 页面主体]] -->
+</div>
+<!-- wrapper]] -->
+
+<script src="./../../lib/jquery/jquery.min.js"></script>
+<script src="./../../js/common.js"></script>
+<script>
+    $(function(){
+
+        var dom = {
+            input1: $('#input1'),
+            input2: $('#input2'),
+            input3: $('#input3'),
+            input4: $('#input4')
+        }
+
+        dom.input1.keyup(function(){
+            dom.input2.val($(this).val());
+        });
+        dom.input3.keyup(function(){
+            dom.input4.val($(this).val());
+        });
+
+        dom.input3.blur(function(){
+            if( parseInt( $(this).val() ) < parseInt(dom.input2.val()) ){
+                alert('最大人数不应小于最小人数');
+                $(this).val('');
+                dom.input4.val('');
+            }
+
+        });
+
+        /*输入框只能输入数字*/
+        $("input[data-accept='number']").keyup(function() {
+            this.value = this.value.replace(/\D/g, "");
+        });
+
+        $('input[type="file"]').change(function(){
+                var url = '';   // 文件上传路径
+
+                var src = ajaxImg(this,url);
+
+                var $img = $('<img src="'+src+'" />');
+                $(this).after($img);
+                $(this).siblings('.add').remove();
+
+        })
+
+
+    });
+</script>
+
+</body>
+</html>

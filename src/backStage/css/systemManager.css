@@ -1,0 +1,79 @@
+/*
+ * time:2016/3/19
+ *  author:leeboo
+ */
+@import "./common.css";
+
+/*首页轮播*/
+.index-carousel .row{
+    margin-top: 20px;
+}
+.index-carousel .row img{
+    width: 100%;
+}
+.index-carousel .row .oprate{
+    margin-top: 20px;
+}
+.index-carousel .row .img-form{
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    min-height: 260px;
+}
+
+/*佣金参数*/
+.parameter{
+    background-color: #fff;
+}
+.parameter .tip{
+    font-size: 23px;
+    font-weight: 600;
+}
+.parameter .form-horizontal{
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    margin: 20px 0;
+}
+.parameter .form-horizontal .level-content{
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+}
+/*角色抽佣*/
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.roleCol1, .roleCol2{
+    float: left;
+}
+.roleCol1 {
+    margin-right: 22px;
+}
+.roleCol2 {
+    width: 200px;
+}
+.blockage {
+    display: inline-block;
+    padding: 6px;
+    height: 32px;
+    width: 80px;
+}
+.symbol {
+    display: inline-block;
+    width: 18px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

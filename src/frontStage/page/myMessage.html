@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>百城万店倾销网</title>
+
+    <link rel="stylesheet" type="text/css" href="./../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/index.css">
+    <link rel="stylesheet" type="text/css" href="./../css/collection.css">
+
+</head>
+<body>
+
+    <header class="ui-header ui-header-stable ui-border-b">
+        <h1>我的消息</h1>
+    </header>
+
+    <footer class="ui-footer ui-footer-stable ui-border-t">
+         <button class="ui-btn-lg productBtn">
+            发送消息
+        </button>
+    </footer>
+
+    <section class="ui-container">
+
+        <!-- tab -->
+        <ul class="ui-row collectNav">
+            <li class="ui-col ui-col-25 active">
+                <a>系统</a>
+            </li>
+            <li class="ui-col ui-col-25">
+                <a>用户</a>
+            </li>
+            <li class="ui-col ui-col-25">
+                <a>活动</a>
+            </li>
+            <li class="ui-col ui-col-25">
+                <a>优惠</a>
+            </li>
+        </ul>
+
+        <!-- collection list -->
+        <ul class="listWrap">
+
+            <li class="list">
+                <a class="main messageMain" href="./messageDetail.html">
+                    <img src="../image/1.jpg" alt="" class="pull-left">
+                    <div class="mainRight">
+                        <p class="name oneLine">消息题目、用户名、活动主题<!-- 、优惠主题 --></p>
+                        
+
+                        <p class="content oneLine">简洁 一行文字即可 多余省略简洁 一行文字即可 多余省略
+                            
+                            <time class="pull-right time">7-8 20:00</time>
+
+                        </p>
+
+                    </div>
+                </a>
+                <div class="del">删除</div>
+            </li>
+
+            <li class="list">
+                <a class="main messageMain" href="./messageDetail.html">
+                    <img src="../image/1.jpg" alt="" class="pull-left">
+                    <div class="mainRight">
+                        <p class="name oneLine">消息题目、用户名、活动主题<!-- 、优惠主题 --></p>
+                        
+
+                        <p class="content oneLine">简洁 一行文字即可 多余省略简洁 一行文字即可 多余省略
+                            
+                            <time class="pull-right time">7-8 20:00</time>
+
+                        </p>
+
+                    </div>
+                </a>
+                <div class="del">删除</div>
+            </li>
+
+        </ul>
+
+        <!-- 分页 -->
+        <div class="paging">
+            <button class="ui-btn">上一頁</button>
+            <button class="ui-btn">下一頁</button>
+        </div>
+
+    </section>
+
+    <!-- 浮层提示 -->
+    <div class="ui-poptips ui-poptips-info delTip hide">
+        <div class="ui-poptips-cnt"><i></i>删除成功</div>
+    </div>
+
+    <script src="./../lib/js/zepto.min.js"></script>
+    <script src="./../lib/js/frozen.js"></script>
+    <script src="./../js/index.js"></script>
+    <script src="./../js/collect.js"></script>
+
+</body>
+</html>

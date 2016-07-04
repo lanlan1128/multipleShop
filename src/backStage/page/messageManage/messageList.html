@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>消息列表</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./../../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/components.css">
+    <link rel="stylesheet" type="text/css" href="../../css/message.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <!-- [[头部 -->
+    <header class="header container-fluid">
+        <div class="row">
+            <div class="col-xs-3">
+                <img src="../../image/logo.jpg" alt="一内购" class="logo img-responsive">
+                <button class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="col-xs-6 header_center">
+                <h1 class="websiteName">百城万店倾销网平台</h1>
+            </div>
+            <div class="col-xs-3">
+                <button class="btnExit fr" type="button"><span class="glyphicon glyphicon-off"></span>退出</button>
+            </div>
+        </div>
+    </header><!-- 头部]] -->
+
+    <!-- [[页面主体 -->
+    <div class="mainBody container-fluid">
+
+        <div class="row">
+
+            <!-- [[ 左边导航 -->
+            <ul class="col-md-3 col-lg-2 navigation" aria-expanded="true">
+                <li>
+                    <div class="navItem"><a href="./../index.html"><span class="glyphicon glyphicon-home"></span>首页</a></div>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-user"></span>用户管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../userManage/largeArea.html">大区列表</a></li>
+                        <li><a href="./../userManage/role.html">角色列表</a></li>
+                        <li><a href="./../userManage/shop.html">店家列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-tag"></span>商品管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../productManage/productList.html">商品列表</a></li>
+                        <li><a href="./../productManage/productPublish.html">发布商品</a></li>
+                        <li><a href="./../productManage/productQuery.html">商品查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-file"></span>订单管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../orderManage/orderList.html">订单列表</a></li>
+                        <li><a href="./../orderManage/orderCheck.html">订单查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-credit-card"></span>财务管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../financingManage/loadList.html">贷款列表</a></li>
+                        <li><a href="./../financingManage/recharge.html">充值列表</a></li>
+                        <li><a href="./../financingManage/taxList.html">会费列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-open"></span>提现管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../withdrawManage/largeCommission.html">大区佣金提现</a></li>
+                        <li><a href="./../withdrawManage/roleCommission.html">角色佣金提现</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-wrench"></span>收藏管理</div>
+                    <ul class="subNav">
+                        <li class="active"><a href="../collectManage/shopList.html">店铺</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem active"><a href="../messageManage/messageList.html"><span class="glyphicon glyphicon-home"></span>消息管理</a></div>
+                </li>
+            </ul> <!-- 左边导航]] -->
+
+            <!-- [[右边操作页面 -->
+            <div class="content col-md-10">
+
+               <!-- tab -->
+               <div class="tab">
+                   <button class="btn btn-primary">系统消息</button>
+                   <button class="btn btn-default">活动消息</button>
+                   <button class="btn btn-default">优惠消息</button>
+                   <button class="btn btn-warning pull-right">新增消息</button>
+                </div>
+               <!-- /tab -->
+
+               <!-- table -->
+               <div class="table-responsive marginT">
+                   <table class="table tabel-border table-bordered table-striped">
+                       <thead>
+                           <tr>
+                               <th class="text-left">消息标题</th>
+                               <th class="text-left">消息内容</th>
+                               <th class="text-center">时间</th>
+                               <th class="text-center">操作</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                               <td>哈哈哈</td>
+                               <td class="messageTd">
+                                   <p class="message" data-toggle="popover" data-content="秋天来临了天空像一块覆盖大地的蓝宝石。村外那个小池塘睁着碧澄澄的眼睛,凝望着这美好的天色。一对小白鹅侧着脑袋欣赏自己映在水里的影子。山谷里枫树">
+                                       秋天来临了天空像一块覆盖大地的蓝宝石。村外那个小池塘睁着碧澄澄的眼睛,凝望着这美好的天色。一对小白鹅侧着脑袋欣赏自己映在水里的影子。山谷里枫树
+                                   </p>
+                               </td>
+                               <td class="text-center">07-02 20:90</td>
+                               <td class="text-center">
+                                   <a href="./editMessage.html" class="table_a">编辑</a>
+                                   <a href="" class="table_a">发布</a>
+                                   <a href="" class="table_a">删除</a>
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>呵呵呵大</td>
+                               <td class="messageTd">
+                                   <p class="message" data-toggle="popover" data-content="呵呵">
+                                       呵呵
+                                   </p>
+                               </td>
+                               <td class="text-center">07-02 20:90</td>
+                               <td class="text-center">
+                                   <a href="./editMessage.html" class="table_a">编辑</a>
+                                   <a href="" class="table_a">发布</a>
+                                   <a href="" class="table_a">删除</a>
+                               </td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </div>
+               <!-- /table -->
+
+            </div><!-- 右边操作页面]] -->
+        </div>
+
+    </div><!-- 页面主体]] -->
+
+</div><!-- wrapper]] -->
+
+
+
+<script src="./../../lib/jquery/jquery.min.js"></script>
+<script src="./../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./../../js/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一内购-平台佣金提现</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/components.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <!-- [[头部 -->
+    <header class="header">
+        <img src="" alt="一内购" class="logo">
+        <button class="btnExit" type="button"><span class="glyphicon glyphicon-off"></span>退出</button>
+    </header><!-- 头部]] -->
+
+    <!-- [[页面主体 -->
+    <div class="mainBody container-fluid">
+
+        <div class="row">
+
+            <!-- [[ 左边导航 -->
+            <ul class="navigation col-md-2">
+                <li>
+                    <a href="./../index.html"><div class="navItem"><span class="glyphicon glyphicon-home"></span>首页</div></a>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-user"></span>用户管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../userManage/copartner.html">合伙人</a></li>
+                        <li><a href="./../userManage/port.html">端口</a></li>
+                        <li><a href="./../userManage/member.html">会员</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-tag"></span>商品管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../productManage/magCategory.html">商品类别</a></li>
+                        <li><a href="./../productManage/productVerify.html">商品审核</a></li>
+                        <li><a href="./../productManage/productQuery.html">商品查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-file"></span>订单管理</div>
+                    <ul class="subNav">
+                        <li><a href="./../orderManage/orderList.html">订单列表</a></li>
+                        <li><a href="./../orderManage/orderCheck.html">订单查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem active"><span class="glyphicon glyphicon-credit-card"></span>财务管理</div>
+                    <ul class="subNav" style="display: block;">
+                        <li><a href="./../financingManage/widthQuery.html">提现查询</a></li>
+                        <li><a href="./../financingManage/memberCommissionWithdraw.html">会员佣金提现</a></li>
+                        <li><a href="./../financingManage/portLoanWithdraw.html">端口货款提现</a></li>
+                        <li><a href="./../financingManage/portCommissionWithdraw.html">端口佣金提现</a></li>
+                        <li><a href="./../financingManage/partnerCommissionWithdraw.html">合伙人佣金提现</a></li>
+                        <li class="active"><a href="./../financingManage/platformCommissionIncome.html">平台佣金收入</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navItem"><span class="glyphicon glyphicon-wrench"></span>系统设置</div>
+                    <ul class="subNav">
+                        <li><a href="./../systemManage/indexCarousel.html">首页轮播</a></li>
+                        <li><a href="./../systemManage/commissionParameter.html">佣金参数</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- 左边导航]] -->
+
+            <!-- [[右边操作页面 -->
+            <div class="content col-md-10">
+
+                <div class="alert alert-success" role="alert">待收入佣金：<label class="money1">23888</label><label class="money2">.23</label></div>
+                <div class="alert alert-info" role="alert">可支配佣金：<label class="money1">23888</label><label class="money2">.23</label></div>
+
+                <!-- [[平台佣金提现列表 -->
+                <div class="table-responsive">
+                    <table class="table table-hover table-bordered tablestriped">
+                        <tbody>
+                        <tr>
+                            <td>时间</td>
+                            <td>订单编号</td>
+                            <td>商品总价</td>
+                            <td>平台分佣</td>
+                            <td>更多</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>12</td>
+                            <td><a href="">查看</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div><!-- [[平台佣金提现列表 -->
+
+                <!-- [[分页-->
+                <div class="paging">
+                    <span class="prev btn btn-primary">上一页</span>
+                    <span class="next btn btn-primary">下一页</span>
+                </div>
+                <!-- 分页]]-->
+
+            </div><!-- 右边操作页面]] -->
+        </div>
+
+    </div><!-- 页面主体]] -->
+
+</div><!-- wrapper]] -->
+
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../script/common.js"></script>
+
+</body>
+</html>

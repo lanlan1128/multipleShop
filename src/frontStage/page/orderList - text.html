@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>百城万店倾销网</title>
+
+    <link rel="stylesheet" type="text/css" href="./../lib/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="./../css/index.css">
+    <link rel="stylesheet" type="text/css" href="./../css/product.css">
+
+</head>
+<body>
+
+    <header class="ui-header ui-header-stable ui-border-b">
+        <i class="ui-icon-return" onclick="history.back()"></i>
+        <h1>我的订单</h1>
+    </header>
+
+    <footer class="ui-footer ui-footer-stable ui-border-t">
+        <ul class="ui-tiled">
+            <li class="footerItem active" onclick="window.location.href='./index.html'"><i class="ui-icon-home"></i><div>首页</div></li>
+            <li class="footerItem"><i class="ui-icon-cart" onclick="window.location.href='./shopCart.html'"></i><div>购物车</div></li>
+            <li class="footerItem"><i class="ui-icon-personal" onclick="window.location.href='./storecenter.html'"></i><div>个人中心</div></li>
+        </ul>
+    </footer>
+
+    <section class="ui-container">
+
+        <!-- [[订单类别 -->
+        <ul class="tab">
+            <li>
+                <a class="ui-btn  orderTabBtn productBtn" id="daifukuan">待付款</a>
+            </li>
+            <li>
+                <a class="ui-btn orderTabBtn " id="daifahuo">待发货</a>
+            </li>
+            <li>
+                <a class="ui-btn orderTabBtn " id="daishouhuo">待收货</a>
+            </li>
+            <li>
+                <a class="ui-btn orderTabBtn " id="yiwancheng">已完成</a>
+            </li>
+            <li>
+                <a class="ui-btn orderTabBtn " id="daipingjia">待评价</a>
+            </li>
+            <li>
+                <a class="ui-btn orderTabBtn " id="tuikuanzhong">退款中</a>
+            </li>
+            <li>
+                <a class="ui-btn orderTabBtn " id="yiguanbi">已关闭</a>
+            </li>
+        </ul>
+        <!-- 订单类别]] -->
+
+        <!-- [[没有订单的情况 -->
+      <!--  <section class="ui-notice">
+            <i></i>
+            <p>没有此类型的订单</p>
+        </section>--><!-- [[没有订单的情况 -->
+
+
+        <!-- [[待付款 -->
+        <ul class="ui-list ui-list-text ui-border-tb uiListNoLink gapT order">
+            <!-- [[订单头部 -->
+            <li class="ui-border-t">
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">订单编号：123456794974123456794974123456794974</h4>
+                </div>
+                <div class="ui-list-action themeColor">待付款</div>
+            </li><!-- 订单头部]] -->
+            <!-- [[订单商品 -->
+            <li class="ui-border-t productLink">
+                <div class="ui-list-thumb">
+                    <img src="./../image/1.jpg" alt="">
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">性别</h4>
+                </div>
+                <div class="textRight">
+                    <p class="">&#165; 20.11</p>
+                    <p class="unMarjorColor">X2</p>
+                </div>
+            </li><!-- 订单商品]] -->
+            <!-- [[订单商品 -->
+            <li class="ui-border-t productLink">
+                <div class="ui-list-thumb">
+                    <img src="./../image/1.jpg" alt="">
+                </div>
+                <div class="ui-list-info productLink">
+                    <h4 class="ui-nowrap">性别</h4>
+                </div>
+                <div class="textRight">
+                    <p class="">&#165; 20.11</p>
+                    <p class="unMarjorColor">X2</p>
+                </div>
+            </li><!-- 订单商品]] -->
+        </ul>
+
+        <div class="block ui-border-b">
+            <p>商品合计： <span class="themeColor">&#165; 123.00</span>（共四件）</p>
+            <p>运费合计： <span class="themeColor">&#165; 10.00</span></p>
+        </div>
+
+        <div class="ui-border-b block operateBlock">
+            <button class="ui-btn">取消订单</button>
+            <button class="ui-btn ui-btn-danger">去付款</button>
+        </div>
+        <!-- 待付款]] -->
+
+        <!-- [[待发货 -->
+        <ul class="order ui-list ui-list-text ui-border-tb uiListNoLink gapT order">
+            <!-- [[订单头部 -->
+            <li class="ui-border-t">
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">订单编号：123456794974123456794974123456794974</h4>
+                </div>
+                <div class="ui-list-action themeColor">待发货</div>
+            </li><!-- 订单头部]] -->
+            <!-- [[订单商品 -->
+            <li class="ui-border-t productLink">
+                <div class="ui-list-thumb">
+                    <img src="./../image/1.jpg" alt="">
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">性别</h4>
+                </div>
+                <div class="textRight">
+                    <p class="">&#165; 20.11</p>
+                    <p class="unMarjorColor">X2</p>
+                </div>
+            </li><!-- 订单商品]] -->
+            <!-- [[订单商品 -->
+            <li class="ui-border-t productLink">
+                <div class="ui-list-thumb">
+                    <img src="./../image/1.jpg" alt="">
+                </div>
+                <div class="ui-list-info productLink">
+                    <h4 class="ui-nowrap">性别性别性别性别性别性别性别性别性别性别性别性别性别性别</h4>
+                </div>
+                <div class="textRight">
+                    <p class="">&#165; 20.11</p>
+                    <p class="unMarjorColor">X2</p>
+                </div>
+            </li><!-- 订单商品]] -->
+        </ul>
+
+        <div class="block ui-border-b">
+            <p>商品合计： <span class="themeColor">&#165; 123.00</span>（共四件）</p>
+            <p>运费合计： <span class="themeColor">&#165; 10.00</span></p>
+        </div>
+        <!-- 待发货]] -->
+
+        <!-- [[待收货 -->
+        <ul class="order ui-list ui-list-text ui-border-tb uiListNoLink gapT order">
+            <!-- [[订单头部 -->
+            <li class="ui-border-t">
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">订单编号：123456794974123456794974123456794974</h4>
+                </div>
+                <div class="ui-list-action themeColor">待收货</div>
+            </li><!-- 订单头部]] -->
+            <!-- [[订单商品 -->
+            <li class="ui-border-t productLink">
+                <div class="ui-list-thumb">
+                    <img src="./../image/1.jpg" alt="">
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">性别</h4>
+                </div>
+                <div class="textRight">
+                    <p class="">&#165; 20.11</p>
+                    <p class="unMarjorColor">X2</p>
+                </div>
+            </li><!-- 订单商品]] -->
+            <!-- [[订单商品 -->
+            <li class="ui-border-t productLink">
+                <div class="ui-list-thumb">
+                    <img src="./../image/1.jpg" alt="">
+                </div>
+                <div class="ui-list-info productLink">
+                    <h4 class="ui-nowrap">性别性别性别性别性别性别性别性别性别性别性别性别性别性别</h4>
+                </div>
+                <div class="textRight">
+                    <p class="">&#165; 20.11</p>
+                    <p class="unMarjorColor">X2</p>
+                </div>
+            </li><!-- 订单商品]] -->
+        </ul>
+
+        <div class="countBlock ui-border-b">
+            <p>商品合计： <span class="themeColor">&#165; 123.00</span>（共四件）</p>
+            <p>运费合计： <span class="themeColor">&#165; 10.00</span></p>
+        </div>
+
+        <div class="ui-border-b block operateBlock">
+            <button class="ui-btn">查看物流</button>
+            <button class="ui-btn ui-btn-danger">确认收货</button>
+        </div>
+        <!-- 待收货]] -->
+
+        <!-- [[待评价 -->
+        <ul class="order ui-list ui-list-text ui-border-tb uiListNoLink gapT order">
+            <!-- [[订单头部 -->
+            <li class="ui-border-t">
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">订单编号：123456794974123456794974123456794974</h4>
+                </div>
+                <div class="ui-list-action themeColor">待评价</div>
+            </li><!-- 订单头部]] -->
+            <!-- [[订单商品 -->
+            <li class="ui-border-t productLink">
+                <div class="ui-list-thumb">
+                    <img src="./../image/1.jpg" alt="">
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">性别</h4>
+                </div>
+                <div class="textRight">
+                    <p class="">&#165; 20.11</p>
+                    <p class="unMarjorColor">X2</p>
+                </div>
+            </li><!-- 订单商品]] -->
+            <!-- [[订单商品 -->
+            <li class="ui-border-t productLink">
+                <div class="ui-list-thumb">
+                    <img src="./../image/1.jpg" alt="">
+                </div>
+                <div class="ui-list-info productLink">
+                    <h4 class="ui-nowrap">性别性别性别性别性别性别性别性别性别性别性别性别性别性别</h4>
+                </div>
+                <div class="textRight">
+                    <p class="">&#165; 20.11</p>
+                    <p class="unMarjorColor">X2</p>
+                </div>
+            </li><!-- 订单商品]] -->
+        </ul>
+
+        <div class="countBlock ui-border-b">
+            <p>商品合计： <span class="themeColor">&#165; 123.00</span>（共四件）</p>
+            <p>运费合计： <span class="themeColor">&#165; 10.00</span></p>
+        </div>
+
+        <div class="ui-border-b block operateBlock">
+            <button class="ui-btn">查看物流</button>
+            <button class="ui-btn ui-btn-danger">去评价</button>
+        </div>
+        <!-- 待评价]] -->
+
+        <!-- [[退款中 -->
+        <ul class="order ui-list ui-list-text ui-border-tb uiListNoLink gapT order">
+            <!-- [[订单头部 -->
+            <li class="ui-border-t">
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">订单编号：123456794974123456794974123456794974</h4>
+                </div>
+                <div class="ui-list-action themeColor">退款中</div>
+            </li><!-- 订单头部]] -->
+            <!-- [[订单商品 -->
+            <li class="ui-border-t productLink">
+                <div class="ui-list-thumb">
+                    <img src="./../image/1.jpg" alt="">
+                </div>
+                <div class="ui-list-info productLink">
+                    <h4 class="ui-nowrap">性别性别性别性别性别性别性别性别性别性别性别性别性别性别</h4>
+                </div>
+                <div class="textRight">
+                    <p class="">&#165; 20.11</p>
+                    <p class="unMarjorColor">X2</p>
+                </div>
+            </li><!-- 订单商品]] -->
+        </ul>
+
+        <div class="countBlock ui-border-b">
+            <p>商品合计： <span class="themeColor">&#165; 123.00</span>（共四件）</p>
+            <p>运费合计： <span class="themeColor">&#165; 10.00</span></p>
+        </div>
+        <!-- 退款中]] -->
+
+        <!-- [[已关闭 -->
+        <ul class="order ui-list ui-list-text ui-border-tb uiListNoLink gapT order">
+            <!-- [[订单头部 -->
+            <li class="ui-border-t">
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">订单编号：123456794974123456794974123456794974</h4>
+                </div>
+                <div class="ui-list-action themeColor">已关闭</div>
+            </li><!-- 订单头部]] -->
+            <!-- [[订单商品 -->
+            <li class="ui-border-t productLink">
+                <div class="ui-list-thumb">
+                    <img src="./../image/1.jpg" alt="">
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">性别</h4>
+                </div>
+                <div class="textRight">
+                    <p class="">&#165; 20.11</p>
+                    <p class="unMarjorColor">X2</p>
+                </div>
+            </li><!-- 订单商品]] -->
+            <!-- [[订单商品 -->
+            <li class="ui-border-t productLink">
+                <div class="ui-list-thumb">
+                    <img src="./../image/1.jpg" alt="">
+                </div>
+                <div class="ui-list-info productLink">
+                    <h4 class="ui-nowrap">性别性别性别性别性别性别性别性别性别性别性别性别性别性别</h4>
+                </div>
+                <div class="textRight">
+                    <p class="">&#165; 20.11</p>
+                    <p class="unMarjorColor">X2</p>
+                </div>
+            </li><!-- 订单商品]] -->
+        </ul>
+
+        <div class="countBlock ui-border-b">
+            <p>商品合计： <span class="themeColor">&#165; 123.00</span>（共四件）</p>
+            <p>运费合计： <span class="themeColor">&#165; 10.00</span></p>
+        </div>
+        <!-- 已关闭]] -->
+
+
+    </section>
+
+    <script src="./../lib/js/zepto.min.js"></script>
+    <script src="./../lib/js/frozen.js"></script>
+    <script>
+        $('.productLink').tap(function(){
+            var $target = $(this);
+            $target.addClass('clickActive');
+            setTimeout(function(){
+                $target.removeClass('clickActive');
+            },150);
+            window.location.href = "./orderDetail.html"
+        });
+
+        var $orderTabBtn = $('.orderTabBtn');
+        $orderTabBtn.tap(function(){
+            $orderTabBtn.removeClass('productBtn');
+            $(this).addClass('productBtn');
+        })
+        /* 待付款 */
+
+        /* 待发货 */
+        $('#daifahuo').tap(function(){
+            $(this).parent().siblings().find("a").removeClass('productBtn');
+            $(this).addClass('productBtn');
+        });
+        /* 待收货 */
+
+        /* 待评价 */
+
+        /* 退款中 */
+
+        /* 已关闭 */
+
+        /*ajax请求*/
+        $('.orderTabBtn').tap(function(){
+            // ajax请求
+            $.ajax({
+                url: "../json/order.json",
+                success: function(){
+                    console.log('h')
+                } 
+            })
+        })
+    </script>
+
+</body>
+</html>
